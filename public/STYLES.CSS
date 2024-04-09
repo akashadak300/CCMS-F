@@ -1,0 +1,103 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #010f3d;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center; /* Center aligning buttons */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; /* Centering buttons */
+}
+
+.button {
+    text-decoration: none;
+    color: #fff; /* Changing text color to white */
+    background-color: #f0f0f0;
+    padding: 80px; /* Adjusting button size */
+    border-radius: 10px; /* Making button square */
+    text-align: center;
+    transition: all 0.3s ease;
+    margin: 0 20px; /* Adding margin between buttons */
+    position: relative; /* Position relative for absolute positioning of image */
+    overflow: hidden; /* Hide overflowing content */
+    display: flex; /* Make container a flexbox */
+    flex-direction: column; /* Arrange elements vertically */
+    justify-content: center; /* Center align elements vertically */
+}
+
+.button img {
+    width: 90%; /* Make image cover entire button width */
+    height: 90%;
+    position: absolute; /* Position absolute to fit image within button */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centering image */
+    transition: all 0.3s ease;
+    z-index: 1; /* Ensure image is above overlay */
+}
+
+.button span {
+    margin-top: 20px; /* Space between image and label */
+    z-index: 2; /* Ensure label is above overlay */
+}
+
+.button:hover {
+    transform: scale(1.1); /* Enlarge button on hover */
+}
+
+.button:hover img {
+    filter: brightness(70%); /* Reduce brightness of image on hover */
+}
+
+.button:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(214, 228, 10, 0.5); /* Red hue overlay on hover */
+    z-index: -1;
+    transition: all 0.3s ease;
+}
