@@ -87,7 +87,7 @@ body {
 }
 
 .button:hover img {
-    filter: brightness(70%); /* Reduce brightness of image on hover */
+    filter: brightness(110%); /* Reduce brightness of image on hover */
 }
 
 .button:hover::before {
@@ -97,7 +97,272 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(214, 228, 10, 0.5); /* Red hue overlay on hover */
+    background-color: rgba(4, 12, 237, 0.914); /* Red hue overlay on hover */
     z-index: -1;
     transition: all 0.3s ease;
 }
+
+
+/* Add this CSS for card styling
+.card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(1, 0, 12, 0.915);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 20px;
+} */
+
+
+.card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(1, 0, 12, 0.915);
+    color: #000; /* Change text color to black */
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+.card a {
+    color: #fff; /* Change link color to white */
+    background-color: #010f3d; /* Change link background color */
+    padding: 10px 20px; /* Adjust link padding */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+    background-color: #004fed; /* Change link background color on hover */
+}
+
+/* Add this CSS for form styling */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #010f3d; /* Change header color */
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+    color: #010f3d; /* Change label color */
+}
+
+.form-container select, 
+.form-container input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container input[type="submit"] {
+    background-color: #010f3d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #004fed;
+}
+
+
+/* Add this CSS for form styling */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #010f3d; /* Change header color */
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+    color: #010f3d; /* Change label color */
+}
+
+.form-container select, 
+.form-container input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container input[type="submit"] {
+    background-color: #010f3d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #004fed;
+}
+
+/* Add this CSS for select dropdown styling */
+.select-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.select-wrapper select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
+}
+
+.select-wrapper::after {
+    content: '\25BC'; /* Downward arrow */
+    font-size: 12px;
+    color: #666;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+/* Add styles for navigation buttons */
+.navigation-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.navigation-buttons .button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.navigation-buttons .button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Add styles for previous and next buttons */
+.prev-next-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.prev-next-button:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+
+/* Search bar styles */
+.search-bar {
+    margin: 20px;
+    text-align: center;
+}
+
+.search-bar select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+
+/* .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: calc(33.33% - 20px); 
+    margin: 10px;
+    padding: 20px;
+    background-color: #1d07e3;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-style: italic;
+} */
