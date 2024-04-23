@@ -1,0 +1,165 @@
+<!--  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rank Predictor</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="#">CCMS</a></div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/tools">Tools</a></li>
+            <li><a href="/cutoff">Cutoff</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Rank Predictor</h2>
+        <form action="/rank-predictor" method="POST">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br><br>
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="gender_neutral">Gender Neutral</option>
+                <option value="OBC-NCL">OBC-NCL</option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+
+            </select><br><br>
+            <label for="marks">Marks:</label>
+            <input type="number" id="marks" name="marks" required><br><br>
+            <input type="submit" value="Predict Rank">
+            <input type="hidden" name="action" value="predict-rank">
+        </form>
+    </div>
+    <div class="container">
+
+        <button onclick="location.href='/tools';" class="prev-next-button">&#8592; Previous</button>
+        <button onclick="location.href='/';" class="prev-next-button">Next &#8594;</button>
+    </div>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rank Predictor</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="#">CCMS</a></div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/tools">Tools</a></li>
+            <li><a href="/cutoff">Cutoff</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Rank Predictor</h2>
+        <form id="rank-predictor-form">
+           
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="gender_neutral">Gender Neutral</option>
+                <option value="OBC-NCL">OBC-NCL</option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+
+            </select><br><br>
+            <label for="marks">Marks:</label>
+            <input type="number" id="marks" name="marks" required><br><br>
+            <input type="submit" value="Predict Rank">
+        </form>
+    </div>
+    <div class="container">
+
+        <button onclick="location.href='/tools';" class="prev-next-button">&#8592; Previous</button>
+        <button onclick="location.href='/';" class="prev-next-button">Next &#8594;</button>
+    </div>
+
+    <script>
+
+        window.onload = function() {
+            const form = document.getElementById('rank-predictor-form');
+            const formData = JSON.parse(localStorage.getItem('rankPredictorFormData')) || {};
+            for (let key in formData) {
+                if (formData.hasOwnProperty(key)) {
+                    const element = form.elements[key];
+                    if (element) {
+                        element.value = formData[key];
+                    }
+                }
+            }
+        };
+
+
+        document.getElementById('rank-predictor-form').addEventListener('submit', function(event) {
+            const form = event.target;
+            const formData = {};
+            for (let element of form.elements) {
+                if (element.name) {
+                    formData[element.name] = element.value;
+                }
+            }
+            localStorage.setItem('rankPredictorFormData', JSON.stringify(formData));
+        });
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rank Predictor</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="#">CCMS</a></div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/tools">Tools</a></li>
+            <li><a href="/cutoff">Cutoff</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Rank Predictor</h2>
+        <form id="rank-predictor-form" action="/rank-predictor" method="post">
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="OPEN">OPEN</option>
+                <option value="OBC_NCL">OBC-NCL</option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+                <!-- Add more options as needed -->
+            </select><br><br>
+            <label for="marks">Marks:</label>
+            <input type="number" id="marks" name="marks" required><br><br>
+            <button type="submit">Predict Rank</button>
+        </form>
+    </div>
+    <div class="container">
+        <!-- Your content here -->
+        <button onclick="location.href='/tools';" class="prev-next-button">&#8592; Previous</button>
+        <button onclick="location.href='/';" class="prev-next-button">Next &#8594;</button>
+    </div>
+</body>
+
+</html>

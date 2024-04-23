@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Comparison</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+._container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.main-compare-box {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.compareStcky {
+  font-size: 24px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.flexColumnCenterMiddle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: middle;
+  text-align: center;
+  position: relative;
+}
+
+.addIlpBox {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
+.dotbox {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.dotbox.grey {
+  background-color: #f0f0f0;
+}
+
+.plus {
+  font-size: 24px;
+  color: #999;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  z-index: 999;
+}
+
+.popup.active {
+  display: block;
+}
+
+.popup:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  top: -10px;
+  left: calc(50% - 10px);
+}
+
+.dropdown {
+  margin-bottom: 10px;
+}
+
+.dropdown label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.dropdown select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Styling for the Apply button */
+.popup button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: #45a049;
+}
+/* Navbar container */
+.navbar {
+  background-color: #333; /* Background color */
+  padding: 10px 20px; /* Padding for the navbar */
+  display: flex; /* Make navbar items display in a row */
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: center; /* Vertically center items */
+}
+
+/* Logo */
+.logo a {
+  color: #fff; /* Text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 24px; /* Font size */
+  font-weight: bold; /* Bold text */
+}
+
+/* Navbar links */
+.nav-links {
+  list-style: none; /* Remove default list styles */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.nav-links li {
+  display: inline; /* Display list items horizontally */
+  margin-right: 20px; /* Spacing between list items */
+}
+
+.nav-links li a {
+  color: #fff; /* Text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 18px; /* Font size */
+}
+
+/* Hover effect for links */
+.nav-links li a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo"><a href="#">CCMS</a></div>
+    <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/tools">Tools</a></li>
+        <li><a href="/cutoff">Cutoff</a></li>
+    </ul>
+</nav>
+
+
+  <section>
+    <div class="_container">
+      <div class="main-compare-box">
+
+        <div class="mainInfo comparisonTuple">
+          <div class="row">
+            <div class="row">
+                <div class="column middle">
+                  
+                  <div class="flexColumnCenterMiddle dotbox" onclick="togglePopup(1)">
+                    
+                    <i class="plus">+</i>
+                    "Add College"
+                  </div>
+                </div>
+              
+                <div class="column middle">
+                  
+                  <div class="flexColumnCenterMiddle dotbox" onclick="togglePopup(2)">
+                   
+                    <i class="plus">+</i>
+                    "Add College"
+                  </div>
+                </div>
+              
+                <div class="column middle">
+                  
+                  <div class="flexColumnCenterMiddle dotbox" onclick="togglePopup(3)">
+                   
+                    <i class="plus">+</i>
+                    "Add College"
+                  </div>
+                </div>
+              
+                <div class="column middle">
+                  
+                  <div class="flexColumnCenterMiddle dotbox" onclick="togglePopup(4)">
+                    
+                    <i class="plus">+</i>
+                    "Add College"
+                  </div>
+                </div>
+              
+              
+              </div>
+              
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- 
+  <div class="popup" id="popup1">
+    <div class="dropdown">
+      <label for="college">Select College:</label>
+      <select id="college">
+        <option value="college1">College 1</option>
+        <option value="college2">College 2</option>
+
+      </select>
+    </div>
+    <div class="dropdown">
+      <label for="course">Select Course:</label>
+      <select id="course">
+        <option value="course1">Course 1</option>
+        <option value="course2">Course 2</option>
+
+      </select>
+    </div>
+    <div class="dropdown">
+      <label for="category">Select Category:</label>
+      <select id="category">
+        <option value="category1">Category 1</option>
+        <option value="category2">Category 2</option>
+
+      </select>
+    </div>
+    <div class="dropdown">
+      <label for="gender">Select Gender:</label>
+      <select id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+
+      </select>
+    </div>
+    <button onclick="togglePopup(1)">Apply</button>
+  </div> -->
+
+  <div class="popup" id="popup1">
+    <form action="results.html" method="post"> 
+      <div class="dropdown">
+        <label for="college">Select College:</label>
+        <select id="college">
+          <option value="college1">College 1</option>
+          <option value="college2">College 2</option>
+        </select>
+      </div>
+      <div class="dropdown">
+        <label for="course">Select Course:</label>
+        <select id="course">
+          <option value="course1">Course 1</option>
+          <option value="course2">Course 2</option>
+        </select>
+      </div>
+      <div class="dropdown">
+        <label for="category">Select Category:</label>
+        <select id="category">
+          <option value="category1">Category 1</option>
+          <option value="category2">Category 2</option>
+        </select>
+      </div>
+      <div class="dropdown">
+        <label for="gender">Select Gender:</label>
+        <select id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <button onclick="togglePopup(1)">Apply</button>
+      <!-- <button type="submit">Apply</button>  -->
+    </form>
+  </div>
+
+     <!-- <div class="popup" id="popup1">
+    <form action="results.html" method="post"> 
+      <div class="dropdown">
+        <label for="college">Select College:</label>
+        <select id="college">
+          <option value="college1">College 1</option>
+          <option value="college2">College 2</option>
+        </select>
+      </div>
+      <div class="dropdown">
+        <label for="course">Select Course:</label>
+        <select id="course">
+          <option value="course1">Course 1</option>
+          <option value="course2">Course 2</option>
+        </select>
+      </div>
+      <div class="dropdown">
+        <label for="category">Select Category:</label>
+        <select id="category">
+          <option value="category1">Category 1</option>
+          <option value="category2">Category 2</option>
+        </select>
+      </div>
+      <div class="dropdown">
+        <label for="gender">Select Gender:</label>
+        <select id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <button onclick="togglePopup(1)">Apply</button>
+      <!-- <button type="submit">Apply</button>  -->
+    </form>
+  </div> -->
+
+
+  <div class="popup" id="popup2">
+    <form action="results.html" method="post"> 
+      <div class="dropdown">
+        <label for="college">Select College:</label>
+        <select id="college">
+          <option value="college1">College 1</option>
+          <option value="college2">College 2</option>
+        </select>
+      </div>
+      <div class="dropdown">
+        <label for="course">Select Course:</label>
+        <select id="course">
+          <option value="course1">Course 1</option>
+          <option value="course2">Course 2</option>
+        </select>
+      </div>
+      <div class="dropdown">
+        <label for="category">Select Category:</label>
+        <select id="category">
+          <option value="category1">Category 1</option>
+          <option value="category2">Category 2</option>
+        </select>
+      </div>
+      <div class="dropdown">
+        <label for="gender">Select Gender:</label>
+        <select id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <button onclick="togglePopup(2)">Apply</button>
+      <!-- <button type="submit">Apply</button>  -->
+    </form>
+  </div>
+
+
+  <!-- <div class="popup" id="popup3">
+    <div class="dropdown">
+      <label for="college">Select College:</label>
+      <select id="college">
+        <option value="college1">College 1</option>
+        <option value="college2">College 2</option>
+
+      </select>
+    </div>
+    <div class="dropdown">
+      <label for="course">Select Course:</label>
+      <select id="course">
+        <option value="course1">Course 1</option>
+        <option value="course2">Course 2</option>
+
+      </select>
+    </div>
+    <div class="dropdown">
+      <label for="category">Select Category:</label>
+      <select id="category">
+        <option value="category1">Category 1</option>
+        <option value="category2">Category 2</option>
+
+      </select>
+    </div>
+    <div class="dropdown">
+      <label for="gender">Select Gender:</label>
+      <select id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+
+      </select>
+    </div>
+    <button onclick="togglePopup(3)">Apply</button>
+  </div>
+ -->
+
+
+ <div class="popup" id="popup3">
+  <form action="results.html" method="post"> 
+    <div class="dropdown">
+      <label for="college">Select College:</label>
+      <select id="college">
+        <option value="college1">College 1</option>
+        <option value="college2">College 2</option>
+      </select>
+    </div>
+    <div class="dropdown">
+      <label for="course">Select Course:</label>
+      <select id="course">
+        <option value="course1">Course 1</option>
+        <option value="course2">Course 2</option>
+      </select>
+    </div>
+    <div class="dropdown">
+      <label for="category">Select Category:</label>
+      <select id="category">
+        <option value="category1">Category 1</option>
+        <option value="category2">Category 2</option>
+      </select>
+    </div>
+    <div class="dropdown">
+      <label for="gender">Select Gender:</label>
+      <select id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
+    <button onclick="togglePopup(3)">Apply</button>
+    <!-- <button type="submit">Apply</button>  -->
+  </form>
+</div>
+  <!-- <div class="popup" id="popup4">
+    <div class="dropdown">
+      <label for="college">Select College:</label>
+      <select id="college">
+        <option value="college1">College 1</option>
+        <option value="college2">College 2</option>
+
+      </select>
+    </div>
+    <div class="dropdown">
+      <label for="course">Select Course:</label>
+      <select id="course">
+        <option value="course1">Course 1</option>
+        <option value="course2">Course 2</option>
+
+      </select>
+    </div>
+    <div class="dropdown">
+      <label for="category">Select Category:</label>
+      <select id="category">
+        <option value="category1">Category 1</option>
+        <option value="category2">Category 2</option>
+
+      </select>
+    </div>
+    <div class="dropdown">
+      <label for="gender">Select Gender:</label>
+      <select id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+
+      </select>
+    </div>
+    <button onclick="togglePopup(4)">Apply</button>
+  </div> -->
+
+
+  <div class="popup" id="popup4">
+    <form action="results.html" method="post"> 
+      <div class="dropdown">
+        <label for="college">Select College:</label>
+        <select id="college">
+          <option value="college1">College 1</option>
+          <option value="college2">College 2</option>
+        </select>
+      </div>
+      <div class="dropdown">
+        <label for="course">Select Course:</label>
+        <select id="course">
+          <option value="course1">Course 1</option>
+          <option value="course2">Course 2</option>
+        </select>
+      </div>
+      <div class="dropdown">
+        <label for="category">Select Category:</label>
+        <select id="category">
+          <option value="category1">Category 1</option>
+          <option value="category2">Category 2</option>
+        </select>
+      </div>
+      <div class="dropdown">
+        <label for="gender">Select Gender:</label>
+        <select id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <button onclick="togglePopup(4)">Apply</button>
+      <!-- <button type="submit">Apply</button>  -->
+    </form>
+  </div>
+
+
+  <script>
+    function togglePopup(number) {
+      var popup = document.getElementById('popup' + number);
+      popup.classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html> 
+
+

@@ -1,0 +1,155 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Predictor</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/eg2css.css">
+    <style>
+       .navbar {
+  background-color: #333; /* Background color */
+  padding: 10px 20px; /* Padding for the navbar */
+  display: flex; /* Make navbar items display in a row */
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: center; /* Vertically center items */
+}
+
+/* Logo */
+.logo a {
+  color: #fff; /* Text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 24px; /* Font size */
+  font-weight: bold; /* Bold text */
+}
+
+/* Navbar links */
+.nav-links {
+  list-style: none; /* Remove default list styles */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.nav-links li {
+  display: inline; /* Display list items horizontally */
+  margin-right: 20px; /* Spacing between list items */
+}
+
+.nav-links li a {
+  color: #fff; /* Text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 18px; /* Font size */
+}
+
+/* Hover effect for links */
+.nav-links li a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+    </style>
+</head>
+<body>
+
+
+  <nav class="navbar">
+        <div class="logo"><a href="#">CCMS</a></div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/tools">Tools</a></li>
+            <li><a href="/cutoff">Cutoff</a></li>
+        </ul>
+    </nav>
+
+
+
+    <section class="bg-light text-dark p-1 text-justify">
+        <div class="container">
+          <div class="card mt-2">
+              <h2 class="text-center text-uppercase pt-3">Enter Your Exam Details</h2>
+              <div class="row justify-content-center">
+                <div class="container col-lg-6">
+                  <div class="card bg-light shadow rounded m-2">
+                    <div class="card-header text-center font-weight-bold bg-warning">JEE Details</div>
+                    <div class="card-body" style="background-color: antiquewhite;">
+                      <form method="post" id="inputRankForm" onsubmit="submitForm()">
+                        <div class="row justify-content-between text-left">
+                          <div class="form-group col-sm-6">
+                            <label for="inputGenderSelect">Gender</label>
+                            <select name="gender" class="form-select" id="inputGenderSelect">
+                              <option value="Gender-Neutral">Male</option>
+                              <option value="Female-only (including Supernumerary)">Female</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-sm-6">
+                            <label for="inputCatagorySelect">Category</label>
+                            <select name="catagory" class="form-select" id="inputCatagorySelect">
+                              <option value="OPEN">OPEN</option>
+                              <option value="OBC-NCL">OBC-NCL</option>
+                              <option value="SC">SC</option>
+                              <option value="ST">ST</option>
+                            </select>
+                          </div>
+                        </div>
+  
+                        <hr>
+  
+                        <div class="row justify-content-between text-left">
+                          <div class="form-group col-sm-6">
+                            <label for="inputAdvancedGeneralRank">Advanced General Rank</label>
+                            <input name="adv_gen_rank" id="inputAdvancedGeneralRank" class="form-control" type="number"
+                              placeholder="Advanced General Rank (optional)">
+                          </div>
+                          <div class="form-group col-sm-6">
+                            <label for="inputAdvancedCatagoryRank">Advanced Category Rank</label>
+                            <input name="adv_cat_rank" id="inputAdvancedCatagoryRank" class="form-control" type="number"
+                              placeholder="Advanced Catagory Rank (optional)">
+                          </div>
+                        </div>
+  
+                        <hr>
+                        <div class="row justify-content-between text-left">
+                          <div class="form-group col-sm-6">
+                            <label for="inputYearSelect">Year</label>
+                            <select name="year" class="form-select" id="inputYearSelect">
+                              <option selected value="2023">2023</option>
+                              <option value="2022">2022</option>
+                              <option value="2021">2021</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-sm-6">
+                            <label for="inputMarginSelect">Opening and Closing Rank margin</label>
+                            <select name="margin" class="form-select" id="inputMarginSelect">
+                              <option value="0.05">5%</option>
+                              <option selected value="0.1">10%(Default)</option>
+                              <option value="0.15">15%</option>
+                              <option value="0.2">20%</option>
+                              <option value="0.25">25%</option>
+                              <option value="0.3">30%</option>
+                            </select>
+                          </div>
+                        </div>
+                        <br />
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                      <hr />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+  
+    
+    <script>
+        function submitForm() {
+            // JavaScript code for form submission
+            // You can add your custom JavaScript code here
+            // For example, you can process form data, validate inputs, etc.
+            // This function is called when the form is submitted.
+        }
+    </script>
+</body>
+</html>
+
+
