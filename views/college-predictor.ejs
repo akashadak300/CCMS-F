@@ -71,20 +71,22 @@
                   <div class="card bg-light shadow rounded m-2">
                     <div class="card-header text-center font-weight-bold bg-warning">JEE Details</div>
                     <div class="card-body" style="background-color: antiquewhite;">
-                      <form method="post" id="inputRankForm" onsubmit="submitForm()">
+                      
+                      
+                      <form method="post" id="inputRankForm">
                         <div class="row justify-content-between text-left">
                           <div class="form-group col-sm-6">
                             <label for="inputGenderSelect">Gender</label>
                             <select name="gender" class="form-select" id="inputGenderSelect">
-                              <option value="Gender-Neutral">Male</option>
-                              <option value="Female-only (including Supernumerary)">Female</option>
+                              <option value="Gender_Neutral">Gender-Neutral</option>
+                              <option value="Female_Only">Female</option>
                             </select>
                           </div>
                           <div class="form-group col-sm-6">
                             <label for="inputCatagorySelect">Category</label>
-                            <select name="catagory" class="form-select" id="inputCatagorySelect">
+                            <select name="category" class="form-select" id="inputCatagorySelect">
                               <option value="OPEN">OPEN</option>
-                              <option value="OBC-NCL">OBC-NCL</option>
+                              <option value="OBC_NCL">OBC-NCL</option>
                               <option value="SC">SC</option>
                               <option value="ST">ST</option>
                             </select>
@@ -97,12 +99,12 @@
                           <div class="form-group col-sm-6">
                             <label for="inputAdvancedGeneralRank">Advanced General Rank</label>
                             <input name="adv_gen_rank" id="inputAdvancedGeneralRank" class="form-control" type="number"
-                              placeholder="Advanced General Rank (optional)">
+                              placeholder="Advanced General Rank">
                           </div>
                           <div class="form-group col-sm-6">
                             <label for="inputAdvancedCatagoryRank">Advanced Category Rank</label>
                             <input name="adv_cat_rank" id="inputAdvancedCatagoryRank" class="form-control" type="number"
-                              placeholder="Advanced Catagory Rank (optional)">
+                              placeholder="Advanced Catagory Rank">
                           </div>
                         </div>
   
@@ -114,6 +116,8 @@
                               <option selected value="2023">2023</option>
                               <option value="2022">2022</option>
                               <option value="2021">2021</option>
+                              <option value="2021">2020</option>
+                              <option value="2021">2019</option>
                             </select>
                           </div>
                           <div class="form-group col-sm-6">
@@ -142,12 +146,12 @@
   
     
     <script>
-        function submitForm() {
-            // JavaScript code for form submission
-            // You can add your custom JavaScript code here
-            // For example, you can process form data, validate inputs, etc.
-            // This function is called when the form is submitted.
-        }
+        // function submitForm() {
+        //     // JavaScript code for form submission
+        //     // You can add your custom JavaScript code here
+        //     // For example, you can process form data, validate inputs, etc.
+        //     // This function is called when the form is submitted.
+        // }
     </script>
 </body>
 </html>
