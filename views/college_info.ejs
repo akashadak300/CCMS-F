@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/college_info.css">
+
+    <title>College Informations</title>
+</head>
+
+<body>
+    <div class="nav_bar">
+
+    </div>
+
+
+    <div class="college-bigger-info">
+        <div class="college-info">
+            <div class="image">
+                <img class="college_image" src="<%= jsonData.data1[0].IMG_SOURCE_LINK %>" alt="College Image">
+            </div>
+            <div class="info">
+    
+                <h1 class="college-name">
+                    <%= jsonData.data1[0].Institute_Name %>
+                </h1>
+                <p class="college-details">NIRF Ranking: <%= jsonData.data1[0].NIRF %>
+                </p>
+                <p class="college-details">Establishment Year: <%= jsonData.data1[0].ESTABLISHMENT_YEAR %>
+                </p>
+                <p class="college-details">State: <%= jsonData.data1[0].STATE %>
+                </p>
+                <p class="college-details">Address: <%= jsonData.data1[0].Institute_Address %>
+                </p>
+                <p class="college-details">Average CTC: <%= jsonData.data1[0].CTC %>
+                </p>
+                <p class="college-details">Area: <%= jsonData.data1[0].Institute_area %> Acre</p>
+            </div>
+
+        </div>
+        <div>
+            <div class="container">
+
+                <% for(let i=0; i < jsonData.data2.length; i++) { %>
+                    <!-- add onclick on this div -->
+                    <div class="card">
+                        <h3>
+                            <%= jsonData.data2[i].Program %>
+                        </h3>
+                        <p>
+                            Total Seats : <%= jsonData.data2[i].Total_Pool %>
+                        </p>
+                        <p>
+                            OPEN_Gender_Neutral : <%= jsonData.data2[i].OPEN_Gender_Neutral %>
+                        </p>
+                        <p>
+                            OPEN_Female_Only : <%= jsonData.data2[i].OPEN_Female_Only %>
+                        </p>
+                        <p>
+                            OBC_NCL_Gender_Neutral : <%= jsonData.data2[i].OBC_NCL_Gender_Neutral %>
+                        </p>
+                        <p>
+                            OBC_NCL_Female_Only : <%= jsonData.data2[i].OBC_NCL_Female_Only %>
+                        </p>
+                        <p>
+                           SC_Gender_Neutral : <%= jsonData.data2[i].SC_Gender_Neutral %>
+                        </p>
+                        <p>
+                            SC_Female_Only : <%= jsonData.data2[i].SC_Female_Only %>
+                        </p>
+                        <p>
+                            ST_Gender_Neutral : <%= jsonData.data2[i].ST_Gender_Neutral %>
+                        </p>
+                        <p>
+                           ST_Female_Only : <%= jsonData.data2[i].ST_Female_Only %>
+                        </p>
+                    </div>
+                    <% } %>
+            </div>
+        </div>
+    </div>
+   
+
+
+
+
+
+</body>
+
+</html>

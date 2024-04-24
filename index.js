@@ -107,7 +107,7 @@ FROM (
     SELECT EQ_CRL, CAT_CRL, MARKS
     FROM \`ccms_finalised_tables - marks_vs_rank_2023\`
     WHERE MARKS > ${marks} AND CAT='${category}'
-    ORDER BY MARKS ASC
+    ORDER BY MARKS DESC
     LIMIT 1
   ) AS tbl1
 
@@ -117,7 +117,7 @@ FROM (
   FROM (
     SELECT EQ_CRL, CAT_CRL, MARKS
     FROM \`ccms_finalised_tables - marks_vs_rank_2022\`
-    WHERE MARKS > 60 AND CAT='ST'
+    WHERE MARKS > ${marks} AND CAT='${category}'
     ORDER BY MARKS DESC
     LIMIT 1
   ) AS tbl2
@@ -128,7 +128,7 @@ FROM (
   FROM (
     SELECT EQ_CRL, CAT_CRL, MARKS
     FROM \`ccms_finalised_tables - marks_vs_rank_2021\`
-    WHERE MARKS > 60 AND CAT='ST'
+    WHERE MARKS > ${marks} AND CAT='${category}'
     ORDER BY MARKS DESC
     LIMIT 1
   ) AS tbl3
@@ -139,7 +139,7 @@ FROM (
   FROM (
     SELECT EQ_CRL, CAT_CRL, MARKS
     FROM \`ccms_finalised_tables - marks_vs_rank_2020\`
-    WHERE MARKS > 60 AND CAT='ST'
+    WHERE MARKS > ${marks} AND CAT='${category}'
     ORDER BY MARKS DESC
     LIMIT 1
   ) AS tbl4
@@ -150,7 +150,7 @@ FROM (
   FROM (
     SELECT EQ_CRL, CAT_CRL, MARKS
     FROM \`ccms_finalised_tables - marks_vs_rank_2019\`
-    WHERE MARKS > 60 AND CAT='ST'
+    WHERE MARKS > ${marks} AND CAT='${category}'
     ORDER BY MARKS DESC
     LIMIT 1
   ) AS tbl5
@@ -198,6 +198,7 @@ app.post("/college-predictor", async (req, res) => {
       INNER JOIN \`ccms_finalised_tables - or_cr_${year}\` AS mvr ON insti.Institute_code = mvr.Institute_code
       WHERE ${category}_${gender}_CR > ${adv_cat_rank}
   ) AS tab;`;
+
 
   const totalQuery = `SET @limit_percentage = ${margin};
   SET @total_count = (
@@ -284,10 +285,33 @@ app.post("/comparison", (req, res) => {
   // res.redirect(`/college-predictor-results?gender=${gender}&category='${category}'&adv_gen_rank=${adv_gen_rank}&adv_cat_rank=${adv_cat_rank}&year=${year}&margin=${margin}`);
 });
 
-app.get("/college", (req, res) => {
-  res.render("college");
+app.get('/college', async (req, res) => {
+  const str = `select institute_code,institute_name, state,IMG_SOURCE_LINK from \`ccms_finalised_tables - institute\` `;
+  const results = await db.promise().query(str);
+  // console.log(results[0][0].institute_code);
+  res.render("college", { data: results[0] });
+  // res.send(results[0]);
 });
 
+
+app.get('/college/:id', async (req, res) => {
+  const ins_id = req.params.id
+  console.log("Hello")
+  console.log(ins_id);
+  console.log(ins_id);
+  const str1 = `select * from \`ccms_finalised_tables - institute\` where Institute_Code = ${ins_id}`;
+  const str2 = `select * from \`ccms_finalised_tables - seat_matrix\` where Institute_Code = ${ins_id}`;
+  const results1 = await db.promise().query(str1);
+  // console.log(results1[0]);
+  const results2 = await db.promise().query(str2);
+  // console.log(results1[0]);
+  // res.send("Hello");
+  const jsonDatastr=JSON.stringify( { data1: results1[0], data2: results2[0] })
+  const jsonData=JSON.parse(jsonDatastr)
+  console.log(jsonData);
+  res.render("college_info", {jsonData });
+  // res.send(ins_id)
+})
 app.get("/prev", (req, res) => {
   const referer = req.get("referer");
   res.redirect(referer);
@@ -300,17 +324,35 @@ app.get("/next", (req, res) => {
 
 
 
-app.get("/college-predictor-results", (req, res) => {
-  const { gender, category, adv_gen_rank, adv_cat_rank, year, margin } =
-    req.query;
+// app.get("/college-predictor-results", (req, res) => {
+//   const { gender, category, adv_gen_rank, adv_cat_rank, year, margin } =
+//     req.query;
 
-  res.render("college-predictor-results");
+//   res.render("college-predictor-results");
+// });
+
+
+
+app.get("/cutoff",async (req, res) => {
+  const str = `select institute_code,institute_name from \`ccms_finalised_tables - institute\` `;
+  const results = await db.promise().query(str);
+  // console.log(results[0]);
+  res.render("cutoff",{data:results[0]});
+});
+app.post("/cutoff", async(req, res) => {
+  const { iit, category, year, gender } = req.body;
+  res.redirect(`/college-cutoff-result?iit=${iit}&category=${category}&year=${year}&gender=${gender}&`);
 });
 
-
-
-app.get("/cutoff", (req, res) => {
-  res.render("cutoff");
+app.get("/college-cutoff-result", async (req, res) => {
+  const { iit, category, year, gender } = req.query;
+  const jsonDatastr = JSON.stringify({ iit, category, year, gender });
+  const jsonData=JSON.parse(jsonDatastr);
+  const sqlqry = `SELECT Academic_program_name, ${category}_${gender}_OR, ${category}_${gender}_CR, Avg_branch_ctc, Seat_capacity FROM \`ccms_finalised_tables - or_cr_${year}\`
+                  WHERE institute_code =${iit} `;
+  const results = await db.promise().query(sqlqry);
+  console.log(results[0]);
+  res.render("college-cutoff-result", { jsonData, data:results[0] });
 });
 
 app.listen(port, () => {

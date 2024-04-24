@@ -106,53 +106,47 @@
 
   <div class="container">
     <h2>College Cutoff</h2>
-    <form action="/college-cutoff-result.html" method="post">
+    <form action="/cutoff" method="post">
       <div class="form-group">
         <label for="iit">Select IIT:</label>
         <select name="iit" id="iit">
             <option>Select</option>
-            <option value="IITKGP">IIT Kharagpur (IITKGP) - West Bengal</option>
-            <option value="IITK">IIT Kanpur (IITK) - Uttar Pradesh</option>
-            <option value="IITB">IIT Bombay (IITB) - Maharashtra</option>
-            <option value="IITM">IIT Madras (IITM) - Tamil Nadu</option>
-            <option value="IITR">IIT Roorkee (IITR) - Uttarakhand</option>
-            <option value="IITP">IIT Patna (IITP) - Bihar</option>
-            <option value="IITG">IIT Guwahati (IITG) - Assam</option>
-            <option value="IITD">IIT Delhi (IITD) - Delhi</option>
-            <option value="IITMD">IIT Mandi (IITMD) - Himachal Pradesh</option>
-            <option value="IIT (BHU)">IIT (BHU) Varanasi (IIT (BHU)) - Uttar Pradesh</option>
-            <option value="IITH">IIT Hyderabad (IITH) - Telangana</option>
-            <option value="IITJ">IIT Jodhpur (IITJ) - Rajasthan</option>
-            <option value="IITGOA">IIT Goa (IITGOA) - Goa</option>
-            <option value="IITJMU">IIT Jammu (IITJMU) - Jammu & Kashmir</option>
-            <option value="IITI">IIT Indore (IITI) - Madhya Pradesh</option>
-            <option value="IITBBS">IIT Bhuvneshwar (IITBBS) - Odisha</option>
-            <option value="IITGN">IIT Gandhinagar (IITGN) - Gujarat</option>
-            <option value="IITTP">IIT Tirupati (IITTP) - Andhra Pradesh</option>
-            <option value="IITBH">IIT Bhilai (IITBH) - Chhattisgarh</option>
-            <option value="IITPKD">IIT Palakkad (IITPKD) - Kerala</option>
-            <option value="IITDH">IIT Dharwad (IITDH) - Karnataka</option>
-            <option value="IITRPR">IIT Ropar (IITRPR) - Punjab</option>
-            <option value="IIT (ISM)">IIT (ISM) Dhanbad (IIT (ISM)) - Jharkhand</option>
-        </select><br><br>
-          <!-- Add options for other IITs -->
+            <% for(let i=0; i < data.length; i++) { %>
+              <!-- add onclick on this div -->
+              <option value="<%= data[i].institute_code %>" data-name="<%= data[i].institute_name %>">
+                <%= data[i].institute_name %>
+              </option>
+              
+              <% } %>
+        </select>       <!-- Add options for other IITs -->
         </select>
       </div>
       <div class="form-group">
         <label for="category">Select Category:</label>
         <select name="category" id="category">
-          <option value="General">General</option>
-          <option value="OBC">OBC</option>
+          <option value="OPEN">General</option>
+          <option value="OBC_NCL">OBC-NCL</option>
           <option value="SC">SC</option>
           <option value="ST">ST</option>
           <!-- Add options for other categories -->
         </select>
       </div>
       <div class="form-group">
+        <label for="year">Select Year:</label>
+        <select name="year" id="year">
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <!-- Add options for other categories -->
+        </select>
+      </div>
+      <div class="form-group">
         <label for="gender">Select Gender:</label>
         <select name="gender" id="gender">
-          <option value="Male">Male</option>
-          <option value="Female">Female</option>
+          <option value="Gender_Neutral">Gender-Neutral</option>
+          <option value="Female_Only">Female-Only</option>
           <!-- Add options for other genders -->
         </select>
       </div>
@@ -160,4 +154,9 @@
     </form>
   </div>
 </body>
+<script>
+  const handleSubmit=(id)=>{
+    console.log(id);
+  }
+</script>
 </html>

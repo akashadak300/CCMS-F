@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Cutoff</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Additional CSS styles can be added here */
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h2>College Cutoff Data</h2>
+        <div>
+            <p><strong>IIT:</strong> <%= jsonData.iit %></p>
+            <p><strong>Category:</strong> <%= jsonData.category %></p>
+            <p><strong>Year:</strong> <%= jsonData.year %></p>
+            <p><strong>Gender:</strong> <%= jsonData.gender %></p>
+        </div>
+        <table class="table table-bordered mt-4">
+            <thead>
+                <tr>
+                    <th>Academic Program</th>
+                    <th><%= jsonData.category %> OR</th>
+                    <th><%= jsonData.category %> CR</th>
+                    <th>Avg Branch CTC</th>
+                    <th>Seat Capacity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% data.forEach(entry => { %>
+                    <tr>
+                        <td><%= entry.Academic_program_name %></td>
+                        <td><%= entry[`${jsonData.category}_${jsonData.gender}_OR`] %></td>
+                        <td><%= entry[`${jsonData.category}_${jsonData.gender}_CR`] %></td>
+                        <td><%= entry.Avg_branch_ctc %></td>
+                        <td><%= entry.Seat_capacity %></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

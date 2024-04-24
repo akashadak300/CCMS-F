@@ -1,92 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
+    <!-- <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <!-- <link href="bootstrap.min.css" rel="stylesheet"> -->
+
     <title>College List</title>
     <style>
-
         body {
             border: 2px solid #000;
             padding: 10px;
         }
+
         .container {
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-start;
             gap: 20px;
         }
+
         .card {
-    border: 1px solid #000;
-    padding: 10px;
-    width: calc(25% - 20px); 
-    box-sizing: border-box;
-    cursor: pointer; 
+            border: 1px solid #000;
+            padding: 10px;
+            width: calc(25% - 20px);
+            box-sizing: border-box;
+            cursor: pointer;
         }
+
         .card:hover {
-            background-color: #f0f0f0; 
+            background-color: #f0f0f0;
         }
+
         .card-row {
             display: flex;
             justify-content: space-between;
             gap: 20px;
-            width: 100%; 
+            width: 100%;
         }
-    
+
         .card h3 {
             margin: 0;
         }
+
         .card p {
             margin: 5px 0;
         }
 
         .navbar {
-  background-color: #333; /* Background color */
-  padding: 10px 20px; /* Padding for the navbar */
-  display: flex; /* Make navbar items display in a row */
-  justify-content: space-between; /* Distribute items evenly */
-  align-items: center; /* Vertically center items */
-}
+            background-color: #333;
+            /* Background color */
+            padding: 10px 20px;
+            /* Padding for the navbar */
+            display: flex;
+            /* Make navbar items display in a row */
+            justify-content: space-between;
+            /* Distribute items evenly */
+            align-items: center;
+            /* Vertically center items */
+        }
 
-/* Logo */
-.logo a {
-  color: #fff; /* Text color */
-  text-decoration: none; /* Remove underline */
-  font-size: 24px; /* Font size */
-  font-weight: bold; /* Bold text */
-}
+        /* Logo */
+        .logo a {
+            color: #fff;
+            /* Text color */
+            text-decoration: none;
+            /* Remove underline */
+            font-size: 24px;
+            /* Font size */
+            font-weight: bold;
+            /* Bold text */
+        }
 
-/* Navbar links */
-.nav-links {
-  list-style: none; /* Remove default list styles */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-}
+        /* Navbar links */
+        .nav-links {
+            list-style: none;
+            /* Remove default list styles */
+            margin: 0;
+            /* Remove default margin */
+            padding: 0;
+            /* Remove default padding */
+        }
 
-.nav-links li {
-  display: inline; /* Display list items horizontally */
-  margin-right: 20px; /* Spacing between list items */
-}
+        .nav-links li {
+            display: inline;
+            /* Display list items horizontally */
+            margin-right: 20px;
+            /* Spacing between list items */
+        }
 
-.nav-links li a {
-  color: #fff; /* Text color */
-  text-decoration: none; /* Remove underline */
-  font-size: 18px; /* Font size */
-}
+        .nav-links li a {
+            color: #fff;
+            /* Text color */
+            text-decoration: none;
+            /* Remove underline */
+            font-size: 18px;
+            /* Font size */
+        }
 
-/* Hover effect for links */
-.nav-links li a:hover {
-  text-decoration: underline; /* Underline on hover */
-}
+        /* Hover effect for links */
+        .nav-links li a:hover {
+            text-decoration: underline;
+            /* Underline on hover */
+        }
 
-
+        /* .image {
+            width:
+        } */
     </style>
-    
+
 </head>
+
 <body>
 
-    <nav class="navbar">
+    <nav class=" navbar ">
         <div class="logo"><a href="#">CCMS</a></div>
         <ul class="nav-links">
             <li><a href="/">Home</a></li>
@@ -94,141 +123,38 @@
             <li><a href="/cutoff">Cutoff</a></li>
         </ul>
     </nav>
-    <div class="search-bar">
-        <select id="college-dropdown" title="college-dropdown">
-            <option>Select</option>
-                <option value="IITKGP">IIT Kharagpur (IITKGP) - West Bengal</option>
-                <option value="IITK">IIT Kanpur (IITK) - Uttar Pradesh</option>
-                <option value="IITB">IIT Bombay (IITB) - Maharashtra</option>
-                <option value="IITM">IIT Madras (IITM) - Tamil Nadu</option>
-                <option value="IITR">IIT Roorkee (IITR) - Uttarakhand</option>
-                <option value="IITP">IIT Patna (IITP) - Bihar</option>
-                <option value="IITG">IIT Guwahati (IITG) - Assam</option>
-                <option value="IITD">IIT Delhi (IITD) - Delhi</option>
-                <option value="IITMD">IIT Mandi (IITMD) - Himachal Pradesh</option>
-                <option value="IIT (BHU)">IIT (BHU) Varanasi (IIT (BHU)) - Uttar Pradesh</option>
-                <option value="IITH">IIT Hyderabad (IITH) - Telangana</option>
-                <option value="IITJ">IIT Jodhpur (IITJ) - Rajasthan</option>
-                <option value="IITGOA">IIT Goa (IITGOA) - Goa</option>
-                <option value="IITJMU">IIT Jammu (IITJMU) - Jammu & Kashmir</option>
-                <option value="IITI">IIT Indore (IITI) - Madhya Pradesh</option>
-                <option value="IITBBS">IIT Bhuvneshwar (IITBBS) - Odisha</option>
-                <option value="IITGN">IIT Gandhinagar (IITGN) - Gujarat</option>
-                <option value="IITTP">IIT Tirupati (IITTP) - Andhra Pradesh</option>
-                <option value="IITBH">IIT Bhilai (IITBH) - Chhattisgarh</option>
-                <option value="IITPKD">IIT Palakkad (IITPKD) - Kerala</option>
-                <option value="IITDH">IIT Dharwad (IITDH) - Karnataka</option>
-                <option value="IITRPR">IIT Ropar (IITRPR) - Punjab</option>
-                <option value="IIT (ISM)">IIT (ISM) Dhanbad (IIT (ISM)) - Jharkhand</option>
-            </select><br><br>
-       
-        </select><br><br>
-        <button onclick="navigateToCollege()">Go</button>
-    </div>
 
     <!-- College cards -->
+    <div>
+
+    </div>
     <div class="container">
-        <div class="card">
-            <h3>IIT Kharagpur (IITKGP)</h3>
-            <p>West Bengal</p>
-        </div>
-        <div class="card">
-            <h3>IIT Kanpur (IITK)</h3>
-            <p>Uttar Pradesh</p>
-        </div>
-        <div class="card">
-            <h3>IIT Bombay (IITB)</h3>
-            <p>Maharashtra</p>
-        </div>
-        <div class="card">
-            <h3>IIT Madras (IITM)</h3>
-            <p>Tamil Nadu</p>
-        </div>
-        <div class="card">
-            <h3>IIT Roorkee (IITR)</h3>
-            <p>Uttarakhand</p>
-        </div>
-        <div class="card">
-            <h3>IIT Patna (IITP)</h3>
-            <p>Bihar</p>
-        </div>
-        <div class="card">
-            <h3>IIT Guwahati (IITG)</h3>
-            <p>Assam</p>
-        </div>
-        <div class="card">
-            <h3>IIT Delhi (IITD)</h3>
-            <p>Delhi</p>
-        </div>
-        <div class="card">
-            <h3>IIT Mandi (IITMD)</h3>
-            <p>Himachal Pradesh</p>
-        </div>
-        <div class="card">
-            <h3>IIT (BHU) Varanasi (IIT (BHU))</h3>
-            <p>Uttar Pradesh</p>
-        </div>
-        <div class="card">
-            <h3>IIT Hyderabad (IITH)</h3>
-            <p>Telangana</p>
-        </div>
-        <div class="card">
-            <h3>IIT Jodhpur (IITJ)</h3>
-            <p>Rajasthan</p>
-        </div>
-        <div class="card">
-            <h3>IIT Goa (IITGOA)</h3>
-            <p>Goa</p>
-        </div>
-        <div class="card">
-            <h3>IIT Jammu (IITJMU)</h3>
-            <p>Jammu & Kashmir</p>
-        </div>
-        <div class="card">
-            <h3>IIT Indore (IITI)</h3>
-            <p>Madhya Pradesh</p>
-        </div>
-        <div class="card">
-            <h3>IIT Bhuvneshwar (IITBBS)</h3>
-            <p>Odisha</p>
-        </div>
-        <div class="card">
-            <h3>IIT Gandhinagar (IITGN)</h3>
-            <p>Gujarat</p>
-        </div>
-        <div class="card">
-            <h3>IIT Tirupati (IITTP)</h3>
-            <p>Andhra Pradesh</p>
-        </div>
-        <div class="card">
-            <h3>IIT Bhilai (IITBH)</h3>
-            <p>Chhattisgarh</p>
-        </div>
-        <div class="card">
-            <h3>IIT Palakkad (IITPKD)</h3>
-            <p>Kerala</p>
-        </div>
-        <div class="card">
-            <h3>IIT Dharwad (IITDH)</h3>
-            <p>Karnataka</p>
-        </div>
-        <div class="card">
-            <h3>IIT Ropar (IITRPR)</h3>
-            <p>Punjab</p>
-        </div>
-        <div class="card">
-            <h3>IIT (ISM) Dhanbad (IIT (ISM))</h3>
-            <p>Jharkhand</p>
-        </div>
-        
+
+        <% for(let i=0; i < data.length; i++) { %>
+            <!-- add onclick on this div -->
+            <div class="card" onClick="navigateToCollege(`<%= data[i].institute_code %>`)">
+                <!-- <img class="image" src=<%=data[i].IMG_SOURCE_LINK %> alt="--" > -->
+                <h3>
+                    <%= data[i].institute_name %>
+                </h3>
+                <p>
+                    <%= data[i].state %>
+                </p>
+            </div>
+            <% } %>
     </div>
 
     <script>
-        function navigateToCollege(collegeId) {
-            // Logic to navigate to the selected college
-            // For example: window.location.href = `/college#${collegeId}`;
+        const navigateToCollege = (collegeId) => {
+            console.log(collegeId);
+            // Construct the URL based on the collegeId
+            const url = `/college/${collegeId}`;
+
+            // Redirect to the constructed URL
+            window.location.href = url;
         }
+
     </script>
 </body>
-</html>
 
+</html>
