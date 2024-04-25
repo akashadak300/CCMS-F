@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Institute Information Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin-top: 50px; /* Add margin from the top */
+      margin-bottom: 50px; /* Add margin from the bottom */
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-group label {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="mb-4">Add Institute Form</h2>
+    <form action="/admin-panel" method="POST">
+
+      <div class="form-group">
+        <label for="instituteName">Institute Name:</label>
+        <input type="text" class="form-control" id="instituteName" name="instituteName" required>
+      </div>
+      <div class="form-group">
+        <label for="establishmentYear">Establishment Year:</label>
+        <input type="number" class="form-control" id="establishmentYear" name="establishmentYear" required>
+      </div>
+      <div class="form-group">
+        <label for="nirf">NIRF:</label>
+        <input type="number" class="form-control" id="nirf" name="nirf" required>
+      </div>
+      <div class="form-group">
+        <label for="imgSourceLink">Image Source Link:</label>
+        <input type="text" class="form-control" id="imgSourceLink" name="imgSourceLink">
+      </div>
+      <div class="form-group">
+        <label for="state">State:</label>
+        <input type="text" class="form-control" id="state" name="state" required>
+      </div>
+      <div class="form-group">
+        <label for="instituteAddress">Institute Address:</label>
+        <textarea class="form-control" id="instituteAddress" name="instituteAddress" rows="3" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="ctc">CTC:</label>
+        <input type="number" step="0.01" class="form-control" id="ctc" name="ctc" required>
+      </div>
+      <div class="form-group">
+        <label for="instituteArea">Institute Area:</label>
+        <input type="number" class="form-control" id="instituteArea" name="instituteArea" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

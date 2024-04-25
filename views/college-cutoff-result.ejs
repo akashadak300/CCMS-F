@@ -8,9 +8,77 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* Additional CSS styles can be added here */
+        .navbar {
+            background-color: #333;
+            /* Background color */
+            padding: 10px 20px;
+            /* Padding for the navbar */
+            display: flex;
+            /* Make navbar items display in a row */
+            justify-content: space-between;
+            /* Distribute items evenly */
+            align-items: center;
+            /* Vertically center items */
+        }
+
+        /* Logo */
+        .logo a {
+            color: #fff;
+            /* Text color */
+            text-decoration: none;
+            /* Remove underline */
+            font-size: 24px;
+            /* Font size */
+            font-weight: bold;
+            /* Bold text */
+        }
+
+        /* Navbar links */
+        .nav-links {
+            list-style: none;
+            /* Remove default list styles */
+            margin: 0;
+            /* Remove default margin */
+            padding: 0;
+            /* Remove default padding */
+        }
+
+        .nav-links li {
+            display: inline;
+            /* Display list items horizontally */
+            margin-right: 20px;
+            /* Spacing between list items */
+        }
+
+        .nav-links li a {
+            color: #fff;
+            /* Text color */
+            text-decoration: none;
+            /* Remove underline */
+            font-size: 18px;
+            /* Font size */
+        }
+
+        /* Hover effect for links */
+        .nav-links li a:hover {
+            text-decoration: underline;
+            /* Underline on hover */
+        }
+
     </style>
 </head>
 <body>
+    <nav class=" navbar ">
+        <div class="logo"><a href="#">CCMS</a></div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/tools">Tools</a></li>
+            <li><a href="/cutoff">Cutoff</a></li>
+            <li><a href="/login">Login</a></li>
+        </ul>
+    </nav>
+
+
     <div class="container mt-4">
         <h2>College Cutoff Data</h2>
         <div>

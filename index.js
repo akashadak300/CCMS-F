@@ -1,12 +1,14 @@
 const express = require("express");
 const app = express();
-
+const dotenv=require("dotenv");
+dotenv.config();
 const path = require("path");
 const { fileURLToPath } = require("url");
 // const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const port = 3000;
 const db = require("./database.js");
 const bodyParser = require("body-parser");
+const { render } = require("ejs");
 app.use(express.static(path.join(__dirname, "/public")));
 // import { fileURLToPath } from 'url';
 // import path from 'path';
@@ -50,7 +52,7 @@ app.post("/rank-predictor", async (req, res) => {
       SELECT EQ_CRL, CAT_CRL, MARKS
       FROM \`ccms_finalised_tables - marks_vs_rank_2023\`
       WHERE MARKS < ${marks} AND CAT='${category}'
-      ORDER BY MARKS ASC
+      ORDER BY MARKS DESC
       LIMIT 1
     ) AS tbl1
   
@@ -107,7 +109,7 @@ FROM (
     SELECT EQ_CRL, CAT_CRL, MARKS
     FROM \`ccms_finalised_tables - marks_vs_rank_2023\`
     WHERE MARKS > ${marks} AND CAT='${category}'
-    ORDER BY MARKS DESC
+    ORDER BY MARKS ASC
     LIMIT 1
   ) AS tbl1
 
@@ -118,7 +120,7 @@ FROM (
     SELECT EQ_CRL, CAT_CRL, MARKS
     FROM \`ccms_finalised_tables - marks_vs_rank_2022\`
     WHERE MARKS > ${marks} AND CAT='${category}'
-    ORDER BY MARKS DESC
+    ORDER BY MARKS ASC
     LIMIT 1
   ) AS tbl2
 
@@ -129,7 +131,7 @@ FROM (
     SELECT EQ_CRL, CAT_CRL, MARKS
     FROM \`ccms_finalised_tables - marks_vs_rank_2021\`
     WHERE MARKS > ${marks} AND CAT='${category}'
-    ORDER BY MARKS DESC
+    ORDER BY MARKS ASC
     LIMIT 1
   ) AS tbl3
 
@@ -140,7 +142,7 @@ FROM (
     SELECT EQ_CRL, CAT_CRL, MARKS
     FROM \`ccms_finalised_tables - marks_vs_rank_2020\`
     WHERE MARKS > ${marks} AND CAT='${category}'
-    ORDER BY MARKS DESC
+    ORDER BY MARKS ASC
     LIMIT 1
   ) AS tbl4
 
@@ -151,7 +153,7 @@ FROM (
     SELECT EQ_CRL, CAT_CRL, MARKS
     FROM \`ccms_finalised_tables - marks_vs_rank_2019\`
     WHERE MARKS > ${marks} AND CAT='${category}'
-    ORDER BY MARKS DESC
+    ORDER BY MARKS ASC
     LIMIT 1
   ) AS tbl5
 ) AS subquery2;`;
@@ -351,15 +353,88 @@ app.post("/cutoff", async(req, res) => {
 
 app.get("/college-cutoff-result", async (req, res) => {
   const { iit, category, year, gender } = req.query;
-  const jsonDatastr = JSON.stringify({ iit, category, year, gender });
-  const jsonData=JSON.parse(jsonDatastr);
   const sqlqry = `SELECT Academic_program_name, ${category}_${gender}_OR, ${category}_${gender}_CR, Avg_branch_ctc, Seat_capacity FROM \`ccms_finalised_tables - or_cr_${year}\`
-                  WHERE institute_code =${iit} `;
+  WHERE institute_code =${iit} `;
   const results = await db.promise().query(sqlqry);
-  console.log(results[0]);
-  res.render("college-cutoff-result", { jsonData, data:results[0] });
+
+
+  const str = `select institute_name from \`ccms_finalised_tables - institute\`  WHERE institute_code =${iit} `;
+  const results2 = await db.promise().query(str);
+
+
+  console.log(results2[0][0].institute_name);
+  // console.log(results2[0]);
+  const jsonDatastr = JSON.stringify({ iit:results2[0][0].institute_name, category, year, gender });
+  const jsonData = JSON.parse(jsonDatastr);
+  // console.log(results[0]);
+  res.render("college-cutoff-result", { jsonData, data: results[0] });
 });
 
+
+app.get("/login",(req,res)=>{
+  res.render("login");
+})
+
+app.post("/login",(req,res)=>{
+  const {email,password}=req.body;
+  // console.log(email,password);
+  const admin_password=process.env.PASSWORD;
+  const admin_email=process.env.EMAIL;
+if(email===admin_email)
+{
+  if(password===admin_password)
+  {
+      res.redirect("admin-panel");
+  }
+  else{
+      res.redirect("wrong-admin");
+  }
+}
+else{
+  res.redirect("wrong-admin");
+}
+ 
+})
+
+
+app.get("/admin-panel",(req,res)=>{
+  res.render("admin-panel")
+})
+app.post("/admin-panel", async (req,res)=>{
+  let { instituteName,establishmentYear,nirf,imgSourceLink,state,instituteAddress,ctc,instituteArea } = req.body;
+  establishmentYear=Number(establishmentYear);
+  nirf=Number(nirf);
+  ctc=Number(ctc);
+  instituteArea=Number(instituteArea);
+  console.log({ instituteName,establishmentYear,nirf,imgSourceLink,state,instituteAddress,ctc,instituteArea })
+  
+    try {
+      const str = `INSERT INTO \`ccms_finalised_tables - institute\` (Institute_Name, ESTABLISHMENT_YEAR, NIRF, IMG_SOURCE_LINK, STATE, Institute_Address, CTC, Institute_area) 
+      VALUES ('${instituteName}', ${establishmentYear}, ${nirf}, '${imgSourceLink}', '${state}', '${instituteAddress}', ${ctc}, ${instituteArea});`
+
+      // Execute the SQL query
+      const [results] = await db.promise().query(str);
+      console.log("hello")
+      // If the query is successful, redirect to a new page
+      res.redirect('/success-page');
+  } catch (error) {
+      console.error('Error executing SQL query:', error);
+
+      // If there's an error, redirect to an error page
+      res.redirect('/error-page');
+  }
+});
+
+app.get('/success-page',(req,res)=>{
+  res.render("success-page");
+})
+app.get('/error-page',(req,res)=>{
+  res.render("error-page");
+})
+
+app.get("/wrong-admin",(req,res)=>{
+  res.render("wrong-admin")
+})
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
