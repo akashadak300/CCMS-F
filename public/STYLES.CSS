@@ -45,8 +45,11 @@ body {
 }
 
 .buttons {
+    /* height: 90%; */
     display: flex;
     justify-content: center; 
+    flex-direction: row;
+    align-items: center;
 }
 
 .button {
@@ -61,8 +64,9 @@ body {
     position: relative; /* Position relative for absolute positioning of image */
     overflow: hidden; /* Hide overflowing content */
     display: flex; /* Make container a flexbox */
-    flex-direction: column; /* Arrange elements vertically */
-    justify-content: center; /* Center align elements vertically */
+    flex-direction: row; /* Arrange elements vertically */
+    justify-content: column; /* Center align elements vertically */
+    align-items: center;
 }
 
 .button img {
@@ -463,4 +467,22 @@ body {
 
 .card-body p {
     margin-bottom: 10px;
+}
+
+
+.utility{
+    color:#020510;
+    font-weight: bold;
+}
+.utility2{
+    color:#de1c1c;
+    font-weight: bold;
+}
+.utility3{
+    color:#527852;;
+    font-weight: bold;
+}
+
+.img{
+    opacity: 0.5;
 }
