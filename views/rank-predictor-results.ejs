@@ -1,0 +1,66 @@
+<!-- rank-predictor-result.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Rank Predictor Result</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="#">CCMS</a></div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/tools">Tools</a></li>
+            <li><a href="/cutoff">Cutoff</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Rank Predictor Result</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th colspan="2">Minimum Range Average</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Average EQ CRL</td>
+                    <td><%= data["min-range-average"].avg_EQ_CRL %></td>
+                </tr>
+                <tr>
+                    <td>Average CAT CRL</td>
+                    <td><%= data["min-range-average"].avg_CAT_CRL %></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th colspan="2">Maximum Range Average</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Average EQ CRL</td>
+                    <td><%= data["max-range-average"].avg_EQ_CRL %></td>
+                </tr>
+                <tr>
+                    <td>Average CAT CRL</td>
+                    <td><%= data["max-range-average"].avg_CAT_CRL %></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

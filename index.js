@@ -166,9 +166,11 @@ FROM (
     console.log(results2[0]);
 
     // Send both results in the response
-    res.send({
-      "max-range-average": results1[0],
-      "min-range-average": results2[0],
+    res.render("rank-predictor-results", {
+      data: {
+        "max-range-average": results1[0],
+        "min-range-average": results2[0],
+      },
     });
   } catch (error) {
     console.error(error);
@@ -176,8 +178,9 @@ FROM (
   }
 });
 
-
-
+app.get("/rank-predictor-result", async (req, res) => {
+  res.render("rank-predictor-results");
+});
 
 
 
@@ -257,33 +260,44 @@ app.post("/college-predictor", async (req, res) => {
     const [results] = await db.promise().query(sql);
     console.log(results);
 
-    res.send(results);
+    res.render("college-predictor-results", {
+      gender,
+      category,
+      adv_gen_rank,
+      adv_cat_rank,
+      year,
+      margin,
+      data: results, // Pass the fetched data to the view
+    });
   } catch (error) {
     console.error(error);
     res.status(500).send("Internal server error");
   }
 });
 
-
-
-
-
-
-
-app.get("/college-comparison", (req, res) => {
-  res.render("college-comparison");
+app.get("/college-predictor-results", async (req, res) => {
+    res.render("college-predictor-results");
 });
 
-app.post("/comparison", (req, res) => {
-  const { gender, category, adv_gen_rank, adv_cat_rank, year, margin } =
-    req.body;
-  const openingRank = Math.floor(adv_cat_rank - adv_cat_rank * margin);
-  const closingRank = Math.ceil(
-    parseInt(adv_cat_rank) + parseInt(adv_cat_rank) * parseFloat(margin)
-  );
 
-  // res.redirect(`/college-predictor-results?gender=${gender}&category='${category}'&adv_gen_rank=${adv_gen_rank}&adv_cat_rank=${adv_cat_rank}&year=${year}&margin=${margin}`);
-});
+
+
+
+
+// app.get("/college-comparison", (req, res) => {
+//   res.render("college-comparison");
+// });
+
+// app.post("/comparison", (req, res) => {
+//   const { gender, category, adv_gen_rank, adv_cat_rank, year, margin } =
+//     req.body;
+//   const openingRank = Math.floor(adv_cat_rank - adv_cat_rank * margin);
+//   const closingRank = Math.ceil(
+//     parseInt(adv_cat_rank) + parseInt(adv_cat_rank) * parseFloat(margin)
+//   );
+
+//   // res.redirect(`/college-predictor-results?gender=${gender}&category='${category}'&adv_gen_rank=${adv_gen_rank}&adv_cat_rank=${adv_cat_rank}&year=${year}&margin=${margin}`);
+// });
 
 app.get('/college', async (req, res) => {
   const str = `select institute_code,institute_name, state,IMG_SOURCE_LINK from \`ccms_finalised_tables - institute\` `;
@@ -321,15 +335,6 @@ app.get("/next", (req, res) => {
   const referer = req.get("referer");
   res.redirect(referer);
 });
-
-
-
-// app.get("/college-predictor-results", (req, res) => {
-//   const { gender, category, adv_gen_rank, adv_cat_rank, year, margin } =
-//     req.query;
-
-//   res.render("college-predictor-results");
-// });
 
 
 

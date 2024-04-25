@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Predictor Results</title>
+    <title>College Cutoff Result</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"> <!-- Link to custom CSS -->
 </head>
+
 <body>
     <!-- Navigation bar -->
     <nav class="navbar">
@@ -17,8 +19,7 @@
             <li><a href="/cutoff">Cutoff</a></li>
         </ul>
     </nav>
-
-    <section class="result-section">
+    <!-- <section class="result-section">
         <div class="container">
             <div class="card mt-5">
                 <h2 class="text-center text-uppercase pt-3">College Predictor Results</h2>
@@ -28,21 +29,34 @@
                     <p><strong>Advanced General Rank:</strong> 5467</p>
                     <p><strong>Advanced Category Rank:</strong> 450</p>
                     <p><strong>Year:</strong> 2023</p>
-                    <p><strong>Opening Rank:</strong> 427 (according to category rank and selected Margin)</p>
-                    <p><strong>Closing Rank:</strong> 473 (according to category rank and selected Margin)</p>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <!-- JavaScript -->
-    <script>
-        function submitForm() {
-            // JavaScript code for form submission
-            // You can add your custom JavaScript code here
-            // For example, you can process form data, validate inputs, etc.
-            // This function is called when the form is submitted.
-        }
-    </script>
+    <div class="container">
+        <h2>College Predictor Results</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Institute Name</th>
+                    <th>Academic Program</th>
+                    <th>Category OR</th>
+                    <th>Category CR</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% data.forEach(entry => { %>
+                    <tr>
+                        <td><%= entry.Institute_Name %></td>
+                        <td><%= entry.Academic_program_name %></td>
+                        <td><%= entry[`${category}_${gender}_OR`] %></td>
+                        <td><%= entry[`${category}_${gender}_CR`] %></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
 </body>
+
 </html>
