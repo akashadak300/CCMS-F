@@ -1,0 +1,302 @@
+Institute_code,Academic_program_name,OPEN_Gender_Neutral_OR,OPEN_Gender_Neutral_CR,OPEN_Female_Only_OR,OPEN_Female_Only_CR,OBC_NCL_Gender_Neutral_OR,OBC_NCL_Gender_Neutral_CR,OBC_NCL_Female_Only_OR,OBC_NCL_Female_Only_CR,SC_Gender_Neutral_OR,SC_Gender_Neutral_CR,SC_Female_Only_OR,SC_Female_Only_CR,ST_Gender_Neutral_OR,ST_Gender_Neutral_CR,ST_Female_Only_OR,ST_Female_Only_CR,Avg_branch_ctc,Seat_capacity
+101,"Computer Science and Engineering (4 Years, Bachelor of Technology)",1734,3265,3587,5370,828,1298,1997,2455,472,815,1199,1220,323,432,630,630,32.4,79
+101,"Computer Science and Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",3622,3736,8150,8150,1416,1552,3031,3031,1015,1015,1322,1343,480,480,869,869,28.4,65
+101,"Electronics and Communication Engineering (4 Years, Bachelor of Technology)",3258,5326,7317,8855,1543,2137,2541,3090,862,1356,1555,1616,509,577,1157,1157,28.2,95
+101,"Electrical Engineering (4 Years, Bachelor of Technology)",5193,7714,10066,12898,2114,2692,3404,4912,1242,1765,2431,2431,511,599,1022,1022,25,93
+101,"Electrical Engineering and M.Tech Power Electronics and Drives (5 Years, Bachelor and Master of Technology (Dual Degree))",7759,8178,15836,15836,3167,3290,6066,6066,2253,2253,2726,2726,1043,1043,1317,1317,23.3,63
+101,"Mechanical Engineering (4 Years, Bachelor of Technology)",7964,10922,15010,18003,3160,3943,5659,7171,2067,2390,2341,2376,919,930,1612,1612,29.7,64
+101,"Mechanical Engineering and M. Tech. in Mechanical System Design (5 Years, Bachelor and Master of Technology (Dual Degree))",10804,11691,19089,19089,4126,4567,8877,8877,2343,2636,2576,2611,1245,1589,1847,1847,30.9,74
+101,"Mechanical Engineering with M.Tech. in Manufacturing Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",11933,12737,19188,19188,4685,4722,8816,8816,2674,2674,3625,3625,1512,1512,1786,1786,25.7,85
+101,"Mechanical Engineering and M. Tech. in Thermal Science & Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",11793,13364,20374,20374,4429,4546,8185,8185,2694,2694,4571,4571,1555,1555,1821,1821,34.5,95
+101,"Civil Engineering (4 Years, Bachelor of Technology)",12831,15253,19245,21485,4582,5530,6161,7448,2197,3055,4241,4241,1054,1114,1605,1605,20.7,61
+101,"Civil Engineering and M.Tech in Transportation Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",14844,15394,21592,21592,5371,5683,8415,8415,2764,2766,4024,4024,1253,1253,1534,1534,27,99
+101,"Metallurgical and Materials Engineering (4 Years, Bachelor of Technology)",12657,15972,21587,22557,4921,5847,8594,8594,3040,3225,4129,4129,1420,1420,1709,1709,28.4,73
+101,"Civil Engineering and M.Tech. in Environmental Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",15751,16447,22333,22333,5925,6315,8757,8757,3073,3073,3908,3908,1478,1478,1872,1872,20.4,89
+101,"Metallurgical and Materials Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",15811,16365,23571,23571,5915,5916,7284,7284,3018,3261,3711,3711,1506,1506,209,209,23.7,88
+101,"Civil Engineering and M. Tech. in Structural Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",13655,16630,23339,23339,5140,6196,7439,7439,2386,2386,4860,4860,1269,1269,364,364,30,61
+102,"Computer Science and Engineering (4 Years, Bachelor of Technology)",456,431,420,655,374,422,423,591,366,391,395,477,365,374,404,451,29.7,85
+102,"Electrical Engineering (4 Years, Bachelor of Technology)",617,861,953,1666,463,768,712,1310,481,575,934,1006,414,470,644,644,33.3,93
+102,"Electrical Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",773,1149,2418,3175,574,851,1106,1692,364,561,781,1125,267,376,491,491,31.8,92
+102,"BS in Mathematics (4 Years, Bachelor of Science)",1194,1812,2810,3281,1209,1887,2931,2931,353,678,2357,2357,687,687,450,450,22.3,98
+102,"Mechanical Engineering (4 Years, Bachelor of Technology)",673,1880,1936,4317,448,1116,1371,2601,365,640,780,1370,230,405,488,657,24.9,85
+102,"Engineering Physics (4 Years, Bachelor of Technology)",776,2113,4867,5518,1167,1910,3163,3592,893,1261,2446,2693,898,1148,1542,1542,31,79
+102,"Economics (4 Years, Bachelor of Science)",1390,2118,2731,5979,733,1346,1359,1359,275,827,1670,1670,453,989,496,496,29.5,90
+102,"Aerospace Engineering (4 Years, Bachelor of Technology)",782,2702,3721,4655,552,1596,1700,3697,67,960,1164,1934,235,483,373,373,27.9,85
+102,"Chemical Engineering (4 Years, Bachelor of Technology)",1774,3036,3281,5638,754,1661,2173,3633,366,1148,876,1867,354,699,614,714,32.5,96
+102,"Energy Engineering (4 Years, Bachelor of Technology)",2222,3223,4933,6333,1763,2195,4085,4134,860,1597,2070,2070,1100,1186,1242,1242,29.5,89
+102,"Civil Engineering (4 Years, Bachelor of Technology)",2700,4699,6506,8185,1406,2362,2182,4828,878,1443,1806,2124,545,663,664,1098,20.1,94
+102,"Metallurgical Engineering and Materials Science (4 Years, Bachelor of Technology)",2813,4733,5871,8008,1259,2545,4427,4772,921,1498,2313,2880,523,888,836,897,32.2,71
+102,"Environmental Science and Engineering (4 Years, Bachelor of Technology)",3886,5465,8243,10687,2231,3216,4003,4167,1259,1536,2351,2351,976,1043,1109,1109,26.1,62
+102,"Chemistry (4 Years, Bachelor of Science)",5333,9136,14399,15001,2872,4076,6890,6915,1682,2393,2962,2962,1378,1439,1298,1298,30.9,82
+103,"Computer Science and Engineering (4 Years, Bachelor of Technology)",1901,3289,5095,6976,1105,1688,2507,2983,775,1075,1481,1855,595,698,1007,1007,30.4,79
+103,"Data Science and Engineering (4 Years, Bachelor of Technology)",3149,4277,7763,8655,1838,2034,3083,3740,924,1434,2272,2272,650,897,1481,1481,28,63
+103,"B.Tech in Mathematics and Computing (4 Years, Bachelor of Technology)",3669,4369,8945,9218,1700,2060,3710,3895,1348,1409,2501,2501,649,839,1416,1416,25.4,75
+103,"B.Tech in Microelectronics & VLSI (4 Years, Bachelor of Technology)",4649,7361,11685,12052,2564,3385,4927,5084,1768,2166,3311,3311,1427,1489,1615,1615,29.3,79
+103,"Electrical Engineering (4 Years, Bachelor of Technology)",5053,7392,10067,12587,2621,3118,3997,5740,1407,1894,2629,3096,352,882,1449,1449,31.9,77
+103,"Mechanical Engineering (4 Years, Bachelor of Technology)",8210,10866,15704,17738,3391,4483,7738,8136,2199,2468,2971,3986,1263,1304,343,343,33,85
+103,"Engineering Physics (4 Years, Bachelor of Technology)",8119,11456,18074,19024,4287,5335,8911,8911,2574,2776,3595,3595,1308,1450,134,134,30.5,68
+103,"B.Tech in General Engineering (4 Years, Bachelor of Technology)",9919,12528,18993,19125,4531,5701,9150,9150,3076,3348,3678,3678,1427,1576,373,373,29.9,89
+103,"Civil Engineering (4 Years, Bachelor of Technology)",11140,14246,19948,22293,4661,5377,8848,8948,2772,3041,4427,4427,1179,1326,1843,1843,26.5,94
+103,"B.Tech in Materials Science and Engineering (4 Years, Bachelor of Technology)",12763,15924,21739,22290,5608,6046,8611,8711,2931,3196,4797,4797,1492,1675,1606,1606,24.9,73
+103,"Bio Engineering (4 Years, Bachelor of Technology)",12820,16461,18672,21403,6124,6557,8866,8966,3428,3684,4528,4528,1819,1928,1861,1861,29.1,97
+103,"BS in Chemical Sciences (4 Years, Bachelor of Science)",12673,17299,23616,24913,6213,6384,8521,8621,3394,3445,4663,4663,1458,1553,1516,1516,31.7,95
+104,"Computer Science and Engineering (4 Years, Bachelor of Technology)",71,162,135,463,104,149,296,362,54,93,168,173,62,68,133,160,24.8,66
+104,"Computer Science and Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",230,273,709,812,202,254,489,646,163,193,426,426,113,142,298,298,24.3,71
+104,"Mathematics and Computing (4 Years, Bachelor of Technology)",300,484,564,947,282,380,578,994,183,284,650,833,179,212,355,355,25.2,68
+104,"Mathematics and Computing (5 Years, Bachelor and Master of Technology (Dual Degree))",722,721,1294,1490,543,617,1177,1295,455,498,669,669,394,401,534,534,21.2,61
+104,"Electrical Engineering (4 Years, Bachelor of Technology)",674,838,1135,1949,463,712,743,1361,338,476,736,918,275,330,443,474,26.5,88
+104,"Electrical Engineering (Power and Automation) (4 Years, Bachelor of Technology)",794,992,2058,2377,648,742,1341,1768,414,563,948,977,307,336,520,520,26.1,62
+104,"Engineering and Computational Mechanics (4 Years, Bachelor of Technology)",897,1299,2521,2796,676,856,1657,1957,497,684,885,885,270,324,517,517,26.2,74
+104,"Mechanical Engineering (4 Years, Bachelor of Technology)",1212,2003,3026,4289,867,1246,2784,3204,259,770,1096,1628,389,507,890,890,25.2,69
+104,"Chemical Engineering (4 Years, Bachelor of Technology)",2189,2637,4002,5714,1328,1718,3270,3546,841,1120,1430,1546,656,766,921,921,21,80
+104,"Engineering Physics (4 Years, Bachelor of Technology)",407,2971,5004,6737,1296,2253,3904,5426,911,1428,2604,2727,1071,1126,1480,1480,24.9,81
+104,"Energy Engineering (4 Years, Bachelor of Technology)",2292,3086,5500,6184,1262,2249,4195,5628,1153,1541,2817,2817,756,896,1754,1754,31.7,63
+104,"Production and Industrial Engineering (4 Years, Bachelor of Technology)",2392,3521,5782,7477,1308,2693,4809,5759,1199,1708,2325,3017,914,1215,1449,1449,32.1,86
+104,"Materials Engineering (4 Years, Bachelor of Technology)",3431,4283,8308,10258,2271,2867,5837,5925,1646,1730,2037,2037,1038,1069,1615,1615,23.8,98
+104,"Chemical Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",2915,4510,6766,7550,1618,2134,4341,4447,848,1206,2209,2500,586,853,956,956,32.3,86
+104,"Civil Engineering (4 Years, Bachelor of Technology)",3162,4708,7850,9527,1147,2340,2441,4950,695,1083,1550,1759,296,450,415,1104,24.3,71
+104,"Biotechnology and Biochemical Engineering (4 Years, Bachelor of Technology)",3711,5779,7322,10527,1247,3073,3949,5815,1203,1716,2019,2781,817,943,1534,1534,34.5,98
+104,"Textile Technology (4 Years, Bachelor of Technology)",4734,6854,10568,12071,2977,3625,5906,6562,1789,2224,3009,3332,1004,1250,1773,1773,22,87
+105,"Computer Science and Engineering (4 Years, Bachelor of Technology)",1059,1501,2086,2884,412,564,1078,1303,314,455,539,664,219,250,291,291,30.5,85
+105,"Mathematics and Computing (4 Years, Bachelor of Technology)",2199,2521,3847,4183,1088,1631,1514,1935,896,1220,1972,1972,670,706,976,976,23.7,82
+105,"Electrical Engineering (4 Years, Bachelor of Technology)",2297,3696,5818,7591,1408,1884,2368,3679,534,1231,1826,2349,481,580,1128,1128,29.2,60
+105,"Mechanical Engineering (4 Years, Bachelor of Technology)",5155,7614,9343,14808,2687,3357,5322,5657,1439,1872,2700,3297,698,868,1344,1344,26.3,63
+105,"Space Sciences and Engineering (4 Years, Bachelor of Technology)",6498,8181,13640,14502,2849,3852,6552,6552,2112,2135,2622,2622,1368,1368,1583,1583,34.1,99
+105,"Engineering Physics (4 Years, Bachelor of Technology)",6044,8373,11899,13762,3557,4364,8202,8202,2124,2401,4181,4181,1409,1409,1410,1410,33.2,79
+105,"Chemical Engineering (4 Years, Bachelor of Technology)",7993,10010,15229,15425,3585,4597,6184,6293,2310,2503,3180,3180,1240,1317,1842,1842,28.8,73
+105,"Civil Engineering (4 Years, Bachelor of Technology)",9519,11018,15018,18017,2872,4228,6629,7024,1826,2170,2881,2988,693,708,1386,1386,32.3,82
+105,"Metallurgical Engineering and Materials Science (4 Years, Bachelor of Technology)",10767,12377,16520,18262,4315,4844,7111,8119,2466,2868,4288,4363,1281,1408,449,449,32.2,72
+106,"Computer Science and Engineering (4 Years, Bachelor of Technology)",374,447,691,870,279,328,503,552,223,260,197,338,184,200,300,300,21.1,92
+106,"Computer Science and Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",601,888,1459,1602,456,601,1011,1153,379,431,707,730,301,331,724,724,23.1,78
+106,"Electronics and Electrical Communication Engineering (4 Years, Bachelor of Technology)",802,1397,2378,2941,529,740,1174,1333,295,518,868,868,277,327,374,374,29,83
+106,"Mathematics and Computing (4 Years, Bachelor of Science)",1145,1600,2379,3907,545,930,1749,1987,562,686,1423,1648,332,588,587,587,29.7,69
+106,"Electronics and Electrical Communication Engineering with M.Tech. in any of the listed specializations (5 Years, Bachelor and Master of Technology (Dual Degree))",1346,1659,3432,5157,801,1107,1200,1611,317,556,965,1593,266,323,603,603,26.2,85
+106,"Electrical Engineering (4 Years, Bachelor of Technology)",1829,2193,3798,5225,997,1255,1503,2059,710,861,1085,1275,538,601,722,722,30.7,67
+106,"Electrical Engineering with M.Tech. in any of the listed specializations (5 Years, Bachelor and Master of Technology (Dual Degree))",2008,2356,2445,5424,1207,1279,2233,2233,673,833,1537,1537,492,493,497,497,22.7,90
+106,"Instrumentation Engineering (4 Years, Bachelor of Technology)",2400,2615,5874,6375,1293,1634,2550,2616,971,1218,2041,2041,778,815,1515,1515,26.7,66
+106,"Mechanical Engineering (4 Years, Bachelor of Technology)",2907,3494,6676,7531,1345,1859,3047,4366,536,1155,1424,1964,619,697,915,915,25.9,91
+106,"Industrial and Systems Engineering (4 Years, Bachelor of Technology)",2867,3942,7765,9182,1661,1983,2364,4226,779,1527,2588,2588,557,763,1246,1246,22.7,79
+106,"Aerospace Engineering (4 Years, Bachelor of Technology)",3402,4777,8500,9124,1857,2301,3836,4261,962,1392,2130,2130,510,752,608,608,32.7,81
+106,"Mechanical Engineering with M.Tech. in any of the listed specializations (5 Years, Bachelor and Master of Technology (Dual Degree))",3913,5199,9962,12292,2271,2971,4783,6447,1433,1767,2426,2805,876,1014,995,995,26.9,95
+106,"Chemical Engineering (4 Years, Bachelor of Technology)",3207,5136,6982,9815,2097,2593,4472,4769,1214,1673,787,2245,623,914,838,838,29.5,63
+106,"Aerospace Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",4687,5300,11192,12623,2684,2875,5546,5546,1515,1738,2530,2530,552,552,781,781,32.9,84
+106,"Industrial and Systems Engineering with M.Tech. in Industrial and Systems Engineering and Management (5 Years, Bachelor and Master of Technology (Dual Degree))",4240,5527,9672,13467,2185,2481,3912,3912,1918,2120,3139,3139,1006,1074,776,776,30,89
+106,"Economics (4 Years, Bachelor of Science)",4587,6183,11417,12935,2174,3412,5105,5897,1705,2295,3996,3996,1343,1425,1796,1796,25.2,66
+106,"Manufacturing Science and Engineering (4 Years, Bachelor of Technology)",5054,6533,12114,13154,2869,3411,6346,6437,1793,2110,3136,3136,1042,1268,1651,1651,30.6,72
+106,"Chemical Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",5608,6701,10920,11779,2899,3320,5091,5925,1632,1904,2223,2223,970,990,1678,1678,27.7,84
+106,"Civil Engineering (4 Years, Bachelor of Technology)",5434,7337,11407,13892,2151,3167,5284,5667,984,1686,1101,2455,605,687,846,846,28,61
+106,"Metallurgical and Materials Engineering (4 Years, Bachelor of Technology)",6354,7589,10262,13114,2938,3676,6190,6725,1550,2231,3050,3114,1133,1273,1520,1520,21.4,80
+106,"Manufacturing Science and Engineering with M.Tech. in Industrial and Systems Engineering and Management (5 Years, Bachelor and Master of Technology (Dual Degree))",5932,8472,13747,15758,3606,3921,7000,7000,2352,2435,4233,4233,1415,1415,1579,1579,24.9,96
+106,"Biotechnology and Biochemical Engineering (4 Years, Bachelor of Technology)",6378,8513,12298,13493,3365,3877,3654,3654,1942,2449,3339,3339,1192,1231,1418,1418,23.9,91
+106,"Civil Engineering with any of the listed specialization (5 Years, Bachelor and Master of Technology (Dual Degree))",7290,8801,14888,15863,3053,3307,7276,7558,1584,1891,3362,3362,623,677,1345,1345,21.9,63
+106,"Metallurgical and Materials Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",7972,9291,14488,15569,3709,3949,6031,7323,2372,2696,3525,3525,1247,1274,1508,1508,20.4,95
+106,"Ocean Engineering and Naval Architecture (4 Years, Bachelor of Technology)",8230,9824,14525,16222,3474,4158,7148,7626,2051,2396,3869,3869,1314,1408,1740,1740,34.8,70
+106,"Mining Engineering (4 Years, Bachelor of Technology)",7456,9931,16493,17779,2873,4030,6930,7430,1789,2383,3121,3435,898,1219,1628,1628,28.8,63
+106,"Biotechnology and Biochemical Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",2533,10050,13581,15290,3968,4513,7752,7752,2023,2741,3432,3432,1311,1331,1597,1597,24.7,98
+106,"Physics (4 Years, Bachelor of Science)",6768,10364,14248,17455,3997,5170,8672,8684,2173,3123,2900,2900,1503,1633,227,227,31.1,83
+106,"Agricultural and Food Engineering (4 Years, Bachelor of Technology)",1538,10432,16202,16602,4050,4292,6794,6956,2163,2661,3055,3055,1083,1389,1796,1796,32.1,96
+106,"Ocean Engineering and Naval Architecture (5 Years, Bachelor and Master of Technology (Dual Degree))",8642,10753,16685,17794,4103,4698,7329,7744,2067,2771,3721,3721,1382,1406,1735,1735,23.3,78
+106,"Mining Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",10187,11786,17995,19426,4569,4978,8577,8577,2931,3032,4186,4186,1188,1722,2010,2010,22.9,89
+106,"Agricultural and Food Engineering with M.Tech. in any of the listed specializations (5 Years, Bachelor and Master of Technology (Dual Degree))",10486,11873,16326,18872,4618,5149,8357,8410,2645,2955,3529,3529,1278,1449,381,381,30,63
+106,"Exploration Geophysics (4 Years, Bachelor of Science)",9583,12549,19562,19859,4363,5558,8920,8920,2844,3422,4400,4400,1595,1622,733,733,25.8,78
+106,"Mining Safety Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",11787,12912,19283,20278,4811,5321,8401,8401,2847,2974,4135,4135,1430,1430,720,720,20.4,95
+106,"Chemistry (4 Years, Bachelor of Science)",9959,13571,16648,18525,3769,5635,7622,7622,2730,3225,3991,3991,1365,1481,483,483,25.3,86
+106,"Applied Geology (4 Years, Bachelor of Science)",10526,14362,18666,20744,4990,5804,7420,7420,2957,3381,4122,4122,1521,1642,696,696,34.1,63
+106,"Architecture (5 Years, Bachelor of Architecture)",14234,23569,18068,24858,6938,9021,7515,7515,2905,3903,4353,4353,1777,420,995,995,33.5,79
+107,"Computer Science and Engineering (4 Years, Bachelor of Technology)",394,690,652,1316,178,272,614,666,126,165,311,337,23,73,133,133,29.4,60
+107,"Artificial Intelligence (4 Years, Bachelor of Technology)",718,1046,1745,1965,289,487,841,918,292,336,699,699,197,211,256,256,20.8,60
+107,"Mathematics and Computing (4 Years, Bachelor of Technology)",1254,1406,2222,2222,703,801,1179,1179,572,619,850,850,446,446,463,463,24.2,92
+107,"Computational Engineering (4 Years, Bachelor of Technology)",1334,1908,4867,4890,846,993,1344,1344,546,756,1304,1304,449,450,1040,1040,23.3,62
+107,"Electrical Engineering (4 Years, Bachelor of Technology)",1421,2488,3264,4079,885,1371,1718,1975,948,1044,1045,1371,422,495,897,897,30.2,77
+107,"Electrical Engineering (IC Design and Technology) (4 Years, Bachelor of Technology)",2146,2654,3973,4871,870,1463,1906,1906,779,1094,1398,1398,450,618,968,968,21.4,65
+107,"Engineering Science (4 Years, Bachelor of Technology)",2061,4163,5597,6208,1249,2068,2161,3459,935,1593,2024,2024,568,917,1465,1465,30,80
+107,"Mechanical Engineering (4 Years, Bachelor of Technology)",2628,5156,7874,9629,1414,2534,3098,4356,1235,1574,2128,2216,491,720,1580,1580,26.5,69
+107,"Engineering Physics (4 Years, Bachelor of Technology)",3364,5633,7865,8417,2440,3019,4851,5576,1238,1956,3035,3035,1195,1228,1515,1515,23.8,81
+107,"Chemical Engineering (4 Years, Bachelor of Technology)",5065,7411,7031,11965,2738,3264,4266,4269,1863,1963,2600,2600,850,996,1198,1198,28.7,71
+107,"Civil Engineering (4 Years, Bachelor of Technology)",6961,9583,10948,14391,3417,3764,4843,5187,1660,2194,2699,2728,708,892,1298,1298,24.5,90
+107,"Materials Science and Metallurgical Engineering (4 Years, Bachelor of Technology)",8212,9901,13989,15123,3451,3966,5528,6295,1948,2362,2610,2610,1121,1151,1153,1153,21.5,61
+107,"Biotechnology and Bioinformatics (4 Years, Bachelor of Technology)",7439,10790,12070,15406,4015,4531,6669,6669,2692,2919,3194,3194,1449,1592,1364,1364,31.9,65
+107,"Biomedical Engineering (4 Years, Bachelor of Technology)",7683,11317,8099,15317,3037,4236,6462,7260,2123,2758,3242,3242,1593,1615,1367,1367,26.9,98
+107,"Industrial Chemistry (4 Years, Bachelor of Technology)",10088,11659,16449,16453,3695,4779,6947,6947,2582,2753,3601,3601,1581,1611,1432,1432,25.7,76
+108,"Computer Science and Engineering (4 Years, Bachelor of Technology)",1676,2456,4381,6088,864,1411,2213,2661,517,745,1178,1490,304,415,911,911,33.8,61
+108,"Artificial Intelligence and Data Science (4 Years, Bachelor of Technology)",2701,3694,3563,8434,1515,2070,3284,3489,1102,1268,1979,2251,704,793,1230,1230,28.6,77
+108,"Electrical Engineering (4 Years, Bachelor of Technology)",4408,7258,9230,11319,2770,3319,4125,5394,1758,2236,2917,2992,573,1084,1486,1486,27.6,79
+108,"Mechanical Engineering (4 Years, Bachelor of Technology)",8142,10562,16481,18682,3504,4391,7426,8215,2348,2651,3048,4184,1181,1258,1761,1761,29.2,75
+108,"Chemical Engineering (4 Years, Bachelor of Technology)",9131,12964,16276,18423,4545,5065,8660,8764,2444,2856,3613,3670,1198,1321,217,217,24.1,97
+108,"Civil and Infrastructure Engineering (4 Years, Bachelor of Technology)",10937,14696,18522,21702,4541,5423,6208,8266,2727,2896,3881,4018,1065,1261,1595,1595,20.7,75
+108,"Materials Engineering (4 Years, Bachelor of Technology)",13628,15911,19392,22222,5456,6332,9247,9247,3093,3573,4366,4783,1571,1681,627,627,28.7,82
+108,"Physics with Specialization (4 Years, Bachelor of Science)",10755,16021,20836,23387,5849,6380,8833,8833,3415,3549,4993,4993,1635,1786,598,598,24.4,79
+108,"Bio Engineering (4 Years, Bachelor of Technology)",13041,16749,21494,22034,5459,6461,8589,8977,2867,3574,4552,4552,1626,1654,854,854,33.9,69
+108,"Chemistry with Specialization (4 Years, Bachelor of Science)",16329,17649,22270,24362,5811,6344,8436,8824,3439,3556,4724,4724,1400,1655,701,701,24.4,69
+109,"Computer Science and Engineering (4 Years, Bachelor of Technology)",384,446,645,818,280,354,573,710,258,285,411,466,234,249,360,362,34.1,88
+109,"Mathematics and Scientific Computing (4 Years, Bachelor of Science)",869,1260,2425,3886,599,884,1474,2129,451,809,1308,1328,392,540,543,543,32,84
+109,"Statistics and Data Science (4 Years, Bachelor of Science)",986,1290,3462,4107,840,999,1277,1961,633,655,1193,1193,439,530,562,562,30.7,98
+109,"Electrical Engineering (4 Years, Bachelor of Technology)",744,1513,2148,3728,637,952,1381,2023,421,745,912,1462,258,366,659,731,28.7,83
+109,"Mechanical Engineering (4 Years, Bachelor of Technology)",1891,3036,6181,7319,1176,1575,2926,4211,798,1066,553,2116,462,557,838,873,33.5,95
+109,"Economics (4 Years, Bachelor of Science)",2414,3917,6873,7405,1410,1835,4155,4456,1273,1615,3073,3452,376,1164,1184,1184,33.5,63
+109,"Aerospace Engineering (4 Years, Bachelor of Technology)",2466,4147,6294,9059,1853,2278,4447,5231,896,1467,2175,2424,525,818,1422,1422,21.1,79
+109,"Chemical Engineering (4 Years, Bachelor of Technology)",3025,4372,6293,8292,1907,2236,3115,4255,899,1167,1763,2173,540,734,1207,1270,32.1,64
+109,"Civil Engineering (4 Years, Bachelor of Technology)",5062,6480,9787,13203,2526,3226,5106,6032,1281,1954,2038,2480,711,867,1423,1455,27.8,90
+109,"Physics (4 Years, Bachelor of Science)",2824,6181,7470,14048,3258,3903,6368,7041,1918,2408,3298,3298,1365,1537,367,367,24.9,85
+109,"Materials Science and Engineering (4 Years, Bachelor of Technology)",4904,7087,11124,11861,2742,3440,4794,5929,1507,2207,3315,3645,1117,1272,1524,1524,28.7,68
+109,"Biological Sciences and Bioengineering (4 Years, Bachelor of Technology)",7286,8259,11045,12404,3569,3836,5904,6694,1819,2366,3670,3701,1308,1497,536,536,32.6,81
+109,"Earth Sciences (4 Years, Bachelor of Science)",8310,11774,14607,19468,4317,5194,7866,7967,3061,3459,4557,4557,1770,1868,762,762,24.7,66
+109,"Chemistry (4 Years, Bachelor of Science)",10237,12036,15293,18796,4284,5468,7862,8126,2737,3105,4135,4280,1706,1755,613,613,24.3,97
+110,"Computer Science and Engineering (4 Years, Bachelor of Technology)",457,480,651,811,370,433,564,625,348,386,404,460,343,347,360,360,32,83
+110,"Electrical Engineering (4 Years, Bachelor of Technology)",375,1144,1011,2338,345,672,874,1227,200,496,547,900,243,326,402,482,33.4,92
+110,"Engineering Physics (4 Years, Bachelor of Technology)",1053,1913,2840,4752,1156,1421,1465,2124,547,1211,1506,1506,715,883,1130,1130,27.4,73
+110,"Mechanical Engineering (4 Years, Bachelor of Technology)",930,2608,2843,5775,480,1287,1231,2754,342,1012,795,1664,220,466,821,839,26.9,92
+110,"Physics (5 Years, Bachelor of Science and Master of Science (Dual Degree))",1196,3403,9144,9144,2733,3068,7143,7143,2968,2968,4575,4575,1389,1389,1036,1054,25.7,89
+110,"Aerospace Engineering (4 Years, Bachelor of Technology)",527,3321,4146,6074,1215,1699,3678,3779,905,1393,2273,2400,401,655,632,632,26,85
+110,"Aerospace Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",3612,3645,6631,6631,1650,2037,3371,3371,559,559,2560,2687,1055,1055,919,919,22,65
+110,"Engineering Design (5 Years, Bachelor and Master of Technology (Dual Degree))",2114,4524,5676,9615,1281,1971,3514,4592,1376,1934,1885,2628,720,1077,1227,1227,30.9,74
+110,"Chemical Engineering (4 Years, Bachelor of Technology)",3310,4623,3486,6781,1530,2127,2926,3719,1181,1530,1324,1910,649,766,803,1103,31.2,76
+110,"Civil Engineering (4 Years, Bachelor of Technology)",4177,6156,7770,9685,1510,2611,3339,4571,356,1515,1595,2000,105,512,645,824,24.7,63
+110,"Metallurgical and Materials Engineering (4 Years, Bachelor of Technology)",4798,6289,8816,10217,2114,2772,4271,5214,1172,1848,2242,2974,714,932,880,880,33.4,61
+110,"Biological Engineering (4 Years, Bachelor of Technology)",1343,8019,4185,8640,2364,3538,5434,5738,2141,2379,2907,2907,925,1130,1239,1239,20.7,74
+110,"Naval Architecture and Ocean Engineering (4 Years, Bachelor of Technology)",5515,8268,11176,14170,2049,3512,5315,6117,1883,2642,2565,3292,1091,1264,1240,1240,26.6,68
+110,"Biological Science (4 Years, Bachelor of Science)",7075,11185,12769,15528,3662,5074,6952,7441,2455,3127,3014,3014,1214,1335,1282,1282,27.1,81
+111,"Computer Science and Engineering (4 Years, Bachelor of Technology)",1578,1919,2379,2829,809,935,1687,1821,639,776,1154,1154,521,583,712,712,20.4,70
+111,"Computer Science and Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",1930,2358,3445,3445,935,1027,2522,2522,700,760,1057,1057,500,500,1251,1251,23.3,87
+111,"Artificial Intelligence (4 Years, Bachelor of Technology)",1888,2593,3008,3199,805,1327,2161,2213,685,977,1224,1224,528,530,1242,1242,20.5,86
+111,"Electrical Engineering (4 Years, Bachelor of Technology)",2594,4002,5696,6816,1671,2183,3974,4269,979,1501,2326,2326,597,624,1187,1187,26.2,78
+111,"Electrical Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",4306,5039,9040,9040,2469,2507,4931,4931,1666,1939,2541,2541,917,917,1759,1759,25.2,88
+111,"Mechanical Engineering (4 Years, Bachelor of Technology)",4980,7374,9955,14206,2653,3515,6165,6640,1810,2165,2765,2765,867,944,1487,1487,30.7,93
+111,"Mechanical Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",7468,8489,15625,16344,3575,4027,7672,7672,2405,2455,3221,3221,1218,1218,1558,1558,32.4,87
+111,"Chemical Engineering (4 Years, Bachelor of Technology)",8026,9843,1972,14350,3616,4462,6568,7212,2376,2447,3464,3464,1209,1348,1760,1760,20.7,82
+111,"Civil Engineering (4 Years, Bachelor of Technology)",8214,11754,17792,18073,3705,4620,6829,6914,2353,2764,3778,3778,993,1026,1292,1292,30.2,78
+111,"Materials Engineering (4 Years, Bachelor of Technology)",10484,12679,15520,18048,3748,5354,8084,8084,2981,3392,3831,3831,1642,1734,750,750,23.8,69
+112,"Computer Science and Engineering (4 Years, Bachelor of Technology)",1832,2975,3497,6041,3659,1336,1531,2555,434,802,1371,1560,335,501,818,818,20.3,86
+112,"Artificial Intelligence and Data Science (4 Years, Bachelor of Technology)",1427,3585,8034,8253,3600,1634,2107,3161,806,1082,1528,1528,500,562,1047,1047,30.6,90
+112,"B. Tech. (CSE) and M.Tech in CSE (5 Years, B.Tech. + M.Tech./MS (Dual Degree))",3140,3843,7749,7749,3715,1541,2318,3372,889,889,1829,1829,607,607,1258,1258,24.7,91
+112,"Mathematics and Computing (4 Years, Bachelor of Technology)",4379,5113,7017,9449,3816,2527,3745,4441,1352,1713,2296,2296,840,995,1711,1711,21.7,61
+112,"B. Tech. (Mathematics & Computing) M. Tech. in (Mathematics & Computing) (5 Years, B.Tech. + M.Tech./MS (Dual Degree))",5275,5434,10247,10247,3725,2564,5553,5553,1576,1576,2095,2095,814,814,1510,1510,29.1,62
+112,"Electronics and Communication Engineering (4 Years, Bachelor of Technology)",4546,5997,11153,11949,3820,2573,4415,4947,1310,1696,2498,2498,756,827,1218,1218,26,75
+112,"B. Tech. (ECE) -M. Tech. in VLSI (5 Years, B.Tech. + M.Tech./MS (Dual Degree))",5929,6681,14208,14208,3731,2653,6184,6184,1990,1990,2301,2301,754,754,1021,1021,27.2,74
+112,"B.Tech. in Electronics and Communication Engineering and M.Tech. in Communication Systems (5 Years, Bachelor and Master of Technology (Dual Degree))",6619,7079,12123,12123,3902,2911,6507,6507,2284,2284,2847,2847,1061,1061,1344,1344,22.9,65
+112,"Electrical and Electronics Engineering (4 Years, Bachelor of Technology)",4333,7443,12734,14352,3771,2692,5007,5222,1494,1760,2169,2169,764,875,1455,1455,31.2,82
+112,"B. Tech. (EEE)-M. Tech. in (Power &. Control) (5 Years, B.Tech. + M.Tech./MS (Dual Degree))",7228,8482,14515,14515,3844,3417,6476,6476,2130,2172,2296,2296,891,1002,1582,1582,32.1,69
+112,"B. Tech. (ME) - M. Tech. in Mechatronics (5 Years, B.Tech. + M.Tech./MS (Dual Degree))",8968,11310,18469,18469,3965,4650,9405,9405,2866,2866,2519,2519,1684,1684,1805,1805,28.9,81
+112,"B. Tech. (ME) - MBA (NITIE) (5 Years, Bachelor of Technology and MBA (Dual Degree))",9638,11607,16973,17638,3922,4705,9153,9153,2491,2939,2414,2414,1797,1797,1700,1700,32.7,71
+112,"Mechanical Engineering (4 Years, Bachelor of Technology)",9054,11789,18196,19529,3973,4605,7543,8660,2495,2828,2902,4249,1299,1397,618,618,22,74
+112,"Engineering Physics (4 Years, Bachelor of Technology)",10381,13301,19064,20093,3986,5858,8616,8616,2892,3571,4608,4608,1266,1577,796,796,22.2,89
+112,"Chemical Engineering (4 Years, Bachelor of Technology)",11790,14069,17615,20346,3911,5407,7715,8859,2632,2869,3468,3905,1286,1361,1690,1690,27.9,66
+112,"Chemical Science and Technology (4 Years, Bachelor of Technology)",13550,15244,19083,23367,3968,5780,8769,9250,2957,3282,4106,4106,1202,1548,563,563,33.5,82
+112,"B. Tech in CE. - M. Tech. in Structural Engineering (5 Years, B.Tech. + M.Tech./MS (Dual Degree))",13032,15516,22190,22190,4079,6349,8972,9453,3274,3356,4309,4309,1405,1751,766,766,32.7,77
+112,"Civil Engineering (4 Years, Bachelor of Technology)",12238,15367,19646,22956,3936,5598,8035,8879,2323,2907,3961,4302,894,1178,1604,1604,33.4,81
+112,"B. Tech in CE. - M. Tech. in Geotechnical Engineering (5 Years, B.Tech. + M.Tech./MS (Dual Degree))",13991,15673,24163,24163,3995,5515,8134,8978,3120,3120,4060,4401,1395,1395,1703,1703,30.9,98
+112,"Metallurgical and Materials Engineering (4 Years, Bachelor of Technology)",14292,16253,22786,23287,3938,6079,8001,8845,3082,3320,4531,4531,1345,1357,543,543,20.2,92
+113,"Computer Science and Engineering (4 Years, Bachelor of Technology)",724,764,1126,1517,4133,548,912,1018,404,461,589,709,394,413,526,556,31.7,71
+113,"Data Science and Artificial Intelligence (4 Years, Bachelor of Technology)",677,823,1432,1974,4030,480,1104,1125,286,348,506,506,205,205,362,362,23.2,72
+113,"Electronics and Communication Engineering (4 Years, Bachelor of Technology)",1132,1697,2736,3272,4129,924,1483,1724,486,716,830,1008,413,431,651,689,26.2,61
+113,"Mathematics & Computing (5 Years, Bachelor of Science and Master of Science (Dual Degree))",1249,1635,3276,4452,4070,1031,2215,2302,650,856,1418,1418,270,428,1003,1003,31.8,74
+113,"Electrical Engineering (4 Years, Bachelor of Technology)",1512,2409,4300,5412,4219,1421,2164,2463,839,1040,1421,2042,558,661,1005,1035,25.9,61
+113,"Mechanical Engineering (4 Years, Bachelor of Technology)",2446,4046,7345,9294,4148,2134,4156,4800,877,1224,2044,2552,573,735,1087,1142,23.7,98
+113,"Engineering Physics (4 Years, Bachelor of Technology)",3444,4867,7388,11652,4237,2691,5646,6327,1657,2072,2769,3651,1352,1395,1246,1301,22.6,66
+113,"Chemical Engineering (4 Years, Bachelor of Technology)",4111,5043,6894,9942,4104,2493,3757,4994,1182,1452,2084,2436,624,786,977,1368,29.6,83
+113,"Economics (5 Years, Bachelor of Science and Master of Science (Dual Degree))",4380,5736,8202,12916,4151,3410,6336,6817,1717,2160,3840,3840,997,1038,1052,1443,20.5,78
+113,"Production and Industrial Engineering (4 Years, Bachelor of Technology)",4667,5929,9682,12276,4148,3137,6073,6407,1670,1969,3410,3458,1020,1125,1507,1507,20.2,60
+113,"Civil Engineering (4 Years, Bachelor of Technology)",4675,7168,10022,12972,4181,3094,4953,5861,922,1694,1980,2987,305,490,1111,1204,34.7,74
+113,"Metallurgical and Materials Engineering (4 Years, Bachelor of Technology)",7108,7997,13002,14884,4192,3560,5971,6733,1717,2127,3407,3893,999,1155,1452,1452,32,81
+113,"Biosciences and Bioengineering (4 Years, Bachelor of Technology)",7492,8745,13025,14728,4213,3955,6837,7086,2159,2283,3823,3823,1186,1321,106,106,32.7,68
+113,"Physics (5 Years, Bachelor of Science and Master of Science (Dual Degree))",5525,9610,17140,17750,4222,5343,7935,7942,2145,2906,2614,2614,1256,1256,105,105,26,87
+113,"Geophysical Technology (5 Years, Integrated Master of Technology)",7721,9888,15196,17664,4255,4301,7395,7420,2194,2637,3172,3172,1240,1512,238,238,22.4,79
+113,"Geological Technology (5 Years, Integrated Master of Technology)",7710,10703,15255,16574,4312,5002,7989,8309,2343,2761,4081,4081,1535,1577,385,385,27.3,83
+113,"Chemical Sciences (5 Years, Bachelor of Science and Master of Science (Dual Degree))",10404,13132,17056,19224,4363,5535,8502,8502,2634,3092,4643,4643,1047,1314,468,468,20.9,99
+113,"Architecture (5 Years, Bachelor of Architecture)",14575,20728,19846,21477,4280,7288,7302,7302,2110,3182,3126,3126,1182,156,283,283,29.6,73
+114,"Computer Science and Engineering (4 Years, Bachelor of Technology)",2098,3454,3625,6650,4397,1386,1883,2569,541,908,729,1131,318,439,642,721,21.6,83
+114,"Mathematics and Computing (5 Years, Integrated Master of Technology)",3496,4786,9520,10226,4356,2274,3439,3758,983,1261,2449,2449,557,608,1024,1024,25.7,98
+114,"Electronics and Communication Engineering (4 Years, Bachelor of Technology)",3433,6045,8668,10634,4449,2439,2906,3785,1130,1546,2025,2450,578,657,1044,1109,24.3,90
+114,"Electrical Engineering (4 Years, Bachelor of Technology)",5749,8176,11518,13006,4552,3330,4106,5384,1642,1981,2785,2947,953,1030,1582,1641,20.8,85
+114,"Mechanical Engineering (4 Years, Bachelor of Technology)",7806,10274,15662,17772,4381,4048,6596,7289,1657,2191,3090,3655,848,927,1540,1565,22,95
+114,"Engineering Physics (4 Years, Bachelor of Technology)",8787,11893,18216,19184,4442,5216,8395,9137,2467,2626,4106,4106,1385,1470,1643,1668,23.1,74
+114,"Chemical Engineering (4 Years, Bachelor of Technology)",9851,12505,14739,15474,4429,4750,6732,7663,2270,2492,2650,2650,834,1151,1551,1551,23.1,80
+114,"Petroleum Engineering (4 Years, Bachelor of Technology)",8698,13277,17150,20668,4520,4706,7379,7759,2239,2804,3556,4877,1072,1182,573,573,23.6,60
+114,"Civil Engineering (4 Years, Bachelor of Technology)",10619,14094,17219,19660,4469,4856,7375,7682,1705,2389,3211,3885,701,851,1453,1453,28.5,77
+114,"Mineral and Metallurgical Engineering (4 Years, Bachelor of Technology)",14142,15729,19974,21324,4648,6310,8423,8749,3024,3440,4371,4371,1716,1736,591,591,34.4,99
+114,"Mining Engineering (4 Years, Bachelor of Technology)",8558,15697,21183,23738,4493,5805,7935,9037,2350,3080,4109,4678,767,1239,345,489,29,65
+114,"Environmental Engineering (4 Years, Bachelor of Technology)",13324,16283,18739,22383,4698,6496,9266,9425,3508,3702,3848,3848,1609,1881,699,699,23.9,84
+114,"Mining Machinery Engineering (4 Years, Bachelor of Technology)",13993,16491,24222,24506,4697,6448,9035,9035,3473,3600,5011,5057,1515,1691,949,949,23.9,71
+114,"Applied Geophysics (5 Years, Integrated Master of Technology)",15627,17126,22466,22466,4732,6777,9086,9086,3709,3746,4961,4961,1964,1964,1000,1000,26.2,89
+114,"Applied Geology (5 Years, Integrated Master of Technology)",16323,17353,22910,22910,4651,6567,8905,8905,3587,3596,4913,4913,1621,1621,819,819,24.8,73
+115,"Computer Science and Engineering (4 Years, Bachelor of Technology)",1465,1951,2508,4304,4630,993,1181,2274,397,682,1004,1176,316,420,949,949,26.5,64
+115,"Artificial Intelligence and Data Engineering (4 Years, Bachelor of Technology)",2576,2844,4971,6379,4777,1848,3502,3502,939,1113,2098,2098,884,940,1224,1224,21.4,65
+115,"Mathematics and Computing (4 Years, Bachelor of Technology)",1955,3138,6174,7345,4650,1796,3188,3188,770,1043,1823,1823,630,654,1125,1125,32.6,65
+115,"Electrical Engineering (4 Years, Bachelor of Technology)",3363,5844,7312,10000,4647,2489,4715,5153,1237,1757,1937,2361,605,728,1149,1149,21.8,79
+115,"Mechanical Engineering (4 Years, Bachelor of Technology)",7484,9118,13882,16825,4756,4176,7283,7598,1933,2270,3700,3943,973,1136,1672,1672,32.6,64
+115,"Engineering Physics (4 Years, Bachelor of Technology)",6677,9822,15050,16223,4679,4920,8786,8786,2633,2976,4466,4466,1319,1429,1499,1499,28.4,92
+115,"Chemical Engineering (4 Years, Bachelor of Technology)",9845,11273,14928,16609,4814,4525,7617,8431,2460,2734,3990,3990,1359,1361,1735,1735,26.2,62
+115,"Civil Engineering (4 Years, Bachelor of Technology)",10129,13150,19351,20913,4753,4819,7869,7952,2014,2440,3626,3626,852,907,1631,1631,25.6,86
+115,"Metallurgical and Materials Engineering (4 Years, Bachelor of Technology)",12127,14844,19613,20045,4896,5785,9266,9266,3138,3384,4976,4976,1632,1632,753,753,29.8,98
+116,"Computer Science and Engineering (4 Years, Bachelor of Technology)",1136,1463,2132,2659,4947,743,1278,1415,543,668,786,897,451,491,659,659,24.8,85
+116,"Computer Science and Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",1616,1758,2691,3304,4970,989,1675,1816,576,733,1055,1055,647,671,936,936,32.9,90
+116,"Mathematics and Computing (5 Years, Bachelor and Master of Technology (Dual Degree))",1915,2358,4974,5881,4955,1502,2722,3053,819,1086,1254,1254,644,736,1034,1034,21.7,80
+116,"Electronics Engineering (4 Years, Bachelor of Technology)",2374,3232,5250,6310,4990,1730,2493,3300,765,1282,1839,2090,615,799,1202,1311,20.1,73
+116,"Electrical Engineering (4 Years, Bachelor of Technology)",3386,3926,6478,7575,5027,2019,2933,3713,1158,1516,2305,2609,731,892,1131,1362,23.2,78
+116,"Electrical Engineering with M.Tech. in Power Electronics (5 Years, Bachelor and Master of Technology (Dual Degree))",4002,4698,8398,10159,4868,2214,3618,4401,1216,1356,2317,2317,562,562,1123,1123,28.1,80
+116,"Mechanical Engineering (4 Years, Bachelor of Technology)",5077,6922,10134,14092,4983,3227,5555,6406,1293,1791,2605,3556,814,992,1443,1546,28.2,60
+116,"Mechanical Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",7206,8532,14665,15709,5032,3681,6647,6811,1838,2295,2684,3635,1075,1126,1790,1790,31.5,77
+116,"Chemical Engineering (4 Years, Bachelor of Technology)",6335,9087,10382,13998,4951,3942,5410,6422,1607,2241,2527,3226,889,1086,1551,1569,21.5,92
+116,"Engineering Physics (5 Years, Bachelor and Master of Technology (Dual Degree))",6976,9764,12085,12365,5002,4789,8255,8255,2817,3044,4047,4047,1537,1602,1634,1652,28.6,74
+116,"Civil Engineering (4 Years, Bachelor of Technology)",8080,10600,14658,16918,5129,4327,6311,7358,1961,2501,1773,3597,940,1082,1512,1612,32,82
+116,"Civil Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",9531,11484,16997,19000,5040,4511,7330,8037,2069,2750,3641,3641,994,1011,1315,1415,25.6,67
+116,"Metallurgical Engineering (4 Years, Bachelor of Technology)",9051,11704,16431,17859,5141,4789,7124,7770,2539,3012,3649,4515,1436,1589,376,498,21,65
+116,"Metallurgical Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",11877,13432,19406,19521,5182,5579,9043,9043,3257,3349,5005,5005,1647,1739,439,561,33.5,70
+116,"Ceramic Engineering (4 Years, Bachelor of Technology)",9901,13482,18101,19357,5135,5794,7684,9235,2516,3516,4684,4858,1611,1629,404,404,34.6,92
+116,"Mining Engineering (4 Years, Bachelor of Technology)",11650,13788,17926,22789,5156,5658,7830,9123,2930,3513,4616,4867,1483,1576,489,794,24.9,79
+116,"Materials Science and Technology (5 Years, Bachelor and Master of Technology (Dual Degree))",11886,13929,17966,19610,5241,6117,8095,8095,2931,3534,4543,4831,1635,1635,640,945,28.9,90
+116,"Pharmaceutical Engineering & Technology (4 Years, Bachelor of Technology)",12484,14439,20104,21458,5108,6111,8052,8819,2877,3463,4515,4560,1387,1564,680,680,32.2,71
+116,"Industrial Chemistry (5 Years, Bachelor and Master of Technology (Dual Degree))",10997,14795,21677,22935,5273,6417,8363,9130,3524,3557,4892,4892,1867,1892,991,991,24.2,63
+116,"Ceramic Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",13441,14703,22078,23163,5228,6498,8254,9021,3100,3559,4958,4958,1660,1660,882,882,24.8,79
+116,"Biochemical Engineering with M.Tech. in Biochemical Engineering and Biotechnology (5 Years, Bachelor and Master of Technology (Dual Degree))",10594,14874,18570,18714,5157,6315,8826,8826,3036,3317,3613,3613,1440,1472,721,721,25.1,91
+116,"Bioengineering with M.Tech in Biomedical Technology (5 Years, Bachelor and Master of Technology (Dual Degree))",11809,14860,17526,18012,5158,5964,8519,8519,2669,3394,3969,3969,1478,1478,704,704,23.8,81
+116,"Mining Engineering (5 Years, Bachelor and Master of Technology (Dual Degree))",13778,15708,22870,23411,5241,6203,8666,8666,3336,3513,4874,4874,1421,1421,594,594,26.8,82
+116,"Pharmaceutical Engineering & Technology (5 Years, Bachelor and Master of Technology (Dual Degree))",15259,15873,22127,22734,5336,6430,8837,8837,3424,3525,4987,4987,1685,1781,765,765,23.6,66
+116,"Architecture (5 Years, Bachelor of Architecture)",24152,24861,25276,25910,5321,8975,8788,8788,4005,4470,4840,4840,866,1303,716,716,23.8,81
+117,"Computer Science and Engineering (4 Years, Bachelor of Technology)",538,766,1534,1830,5286,379,816,969,233,285,465,495,170,195,350,408,25.5,60
+117,"Data Science and Artificial Intelligence (4 Years, Bachelor of Technology)",1076,1211,1681,2129,5341,578,1427,1498,367,446,986,986,282,284,441,499,21.8,71
+117,"Mathematics and Computing (4 Years, Bachelor of Technology)",1058,1372,2371,2620,5392,780,1401,1614,425,629,1130,1312,371,415,636,636,24.2,64
+117,"Electronics and Communication Engineering (4 Years, Bachelor of Technology)",1738,2042,3950,4543,5459,1176,1922,2051,536,971,1089,1336,491,545,799,799,20.1,96
+117,"Electronics and Electrical Engineering (4 Years, Bachelor of Technology)",2116,2417,4678,5491,5456,1372,2299,2522,805,992,1412,1736,606,638,930,930,22,85
+117,"Mechanical Engineering (4 Years, Bachelor of Technology)",2795,4886,8365,10633,5391,2323,4697,5310,1027,1377,2496,2588,590,756,1197,1301,31.3,80
+117,"Chemical Engineering (4 Years, Bachelor of Technology)",5140,6235,10055,11578,5482,3088,5263,5902,1321,1858,2748,2998,1009,1050,938,1267,34.8,75
+117,"Engineering Physics (4 Years, Bachelor of Technology)",4797,6591,11097,13431,5447,3675,6407,6891,1912,2305,3705,3943,1092,1223,1797,1797,27.2,79
+117,"Energy Engineering (4 Years, Bachelor of Technology)",6042,6813,13162,13448,5470,3144,6991,6991,1860,1976,3629,3629,1006,1006,1824,1824,27.4,81
+117,"Chemical Science and Technology (4 Years, Bachelor of Technology)",6507,8477,12195,14741,5433,3722,6633,7030,1741,2137,2902,3069,843,956,1553,1553,31.5,91
+117,"Civil Engineering (4 Years, Bachelor of Technology)",4791,8777,14148,15854,5582,3700,6227,6817,1961,2166,2494,3420,852,909,1217,1507,33.8,87
+117,"Biosciences and Bioengineering (4 Years, Bachelor of Technology)",9251,10847,16469,18047,5635,4632,8143,8266,2706,2951,4169,4543,1065,1624,1974,1974,30.3,81
+118,"Computer Science and Engineering (4 Years, Bachelor of Technology)",3557,5879,9357,11288,5502,2556,3369,4313,1134,1371,1674,2054,542,597,982,982,32,60
+118,"Data Science and Artificial Intelligence (4 Years, Bachelor of Technology)",5940,7213,11084,12140,5579,3028,4438,4570,1153,1593,2562,2608,899,947,1117,1117,26.8,80
+118,"Electrical Engineering (4 Years, Bachelor of Technology)",8575,10829,14619,15956,5538,4178,5974,6500,2047,2293,2735,2735,1077,1108,1640,1640,32.4,62
+118,"Mechatronics Engineering (4 Years, Bachelor of Technology)",10797,12290,17722,19717,5713,5127,8416,8416,2752,3043,4865,4865,1446,1446,1971,1971,34,69
+118,"Mechanical Engineering (4 Years, Bachelor of Technology)",12479,14632,19641,22506,5648,5133,8492,9224,2867,3022,4487,4487,1262,1395,310,310,27.7,98
+118,"Materials Science and Metallurgical Engineering (4 Years, Bachelor of Technology)",16364,16978,22689,23621,5705,6528,8587,9319,3420,3569,4582,4582,1713,1713,405,405,23.3,67
+119,"Computer Science and Engineering (4 Years, Bachelor of Technology)",3870,4600,7351,8014,5756,2121,3393,4046,1079,1259,2271,2271,673,737,1451,1451,26.2,96
+119,"Mathematics and Computing (4 Years, Bachelor of Technology)",4835,6924,10078,10967,5769,2935,4873,4926,1453,1939,2278,2278,1024,1055,1458,1458,25.7,80
+119,"Electrical Engineering (4 Years, Bachelor of Technology)",7030,9209,12118,15319,5760,3985,6083,6622,1967,2402,2800,2800,807,1253,1708,1708,27.6,91
+119,"Mechanical Engineering (4 Years, Bachelor of Technology)",10429,13531,19704,21108,5653,4858,7395,7885,2398,2663,4047,4287,879,1025,184,184,33.6,62
+120,"Computer Science and Engineering (4 Years, Bachelor of Technology)",3705,5162,8281,9104,5648,1735,2889,3104,337,735,1595,1595,379,400,932,932,28.1,73
+120,"Data Science and Engineering (4 Years, Bachelor of Technology)",5659,7148,9300,11676,5687,2665,3684,3742,1190,1573,2442,2442,647,688,1036,1036,23.1,89
+120,"Electrical Engineering (4 Years, Bachelor of Technology)",8004,9778,12759,14475,5692,3676,5248,5644,1829,2010,2581,2581,768,790,1530,1530,21.7,92
+120,"Mechanical Engineering (4 Years, Bachelor of Technology)",10409,13362,19025,21280,5843,5088,7913,8277,2572,2859,3864,3864,1305,1424,362,362,33.8,73
+120,"Civil Engineering (4 Years, Bachelor of Technology)",14471,16731,22337,23754,5846,5974,8472,8473,3108,3178,4020,4020,1088,1450,1844,1844,33,66
+121,"Computer Science and Engineering (4 Years, Bachelor of Technology)",2529,4053,5415,6910,5919,1780,2472,2744,802,1227,1891,1891,516,659,1234,1234,27.6,93
+121,"Electrical Engineering (4 Years, Bachelor of Technology)",6149,8830,8484,12907,5764,3247,4904,5448,1122,2039,2118,2118,629,740,1295,1295,33.8,99
+121,"Mechanical Engineering (4 Years, Bachelor of Technology)",10185,12506,16222,18703,5959,4899,6999,7126,2810,2968,2778,2778,1449,1481,1775,1775,24.2,92
+121,"Chemical Engineering (4 Years, Bachelor of Technology)",12978,14813,13305,21472,5910,5708,7928,8033,2963,2994,3400,3533,1545,1579,1658,1658,28,60
+121,"Civil Engineering (4 Years, Bachelor of Technology)",13445,16750,20016,23324,5865,5727,7543,8107,2492,2967,2550,2773,1210,1291,1549,1549,29,93
+122,"Computer Science and Engineering (4 Years, Bachelor of Technology)",3929,4864,8529,9848,5842,2500,4489,5071,951,1003,1994,1994,583,704,1484,1484,24.1,83
+122,"Mathematics and Computing (4 Years, Bachelor of Technology)",6533,8195,10622,14904,6027,3468,5799,7117,2019,2242,3347,3388,1149,1177,1835,1835,30,91
+122,"Electrical Engineering (4 Years, Bachelor of Technology)",9105,10149,14184,16305,6040,3939,6931,7586,2263,2533,3654,3654,1204,1403,1842,1842,28.1,83
+122,"Mechanical Engineering (4 Years, Bachelor of Technology)",11254,14929,19137,21014,6065,5246,9136,9384,2502,3000,4741,4741,1534,1552,656,656,31.3,93
+122,"Chemical Engineering (4 Years, Bachelor of Technology)",13322,16785,21905,24418,6090,5948,9337,9337,2803,3361,4376,4376,1540,1631,823,823,34.6,74
+122,"Civil Engineering (4 Years, Bachelor of Technology)",13027,16890,23818,24507,5985,6013,9108,9108,1678,3095,4608,4608,1204,1259,1676,1676,21.9,83
+122,"Materials Engineering (4 Years, Bachelor of Technology)",16685,17364,23367,24774,5986,6369,9091,9091,3030,3393,4628,4628,1617,1625,730,730,21.7,80
+123,"Computer Science and Engineering (4 Years, Bachelor of Technology)",4174,6206,8137,11053,6085,2614,3465,3808,737,1400,1918,2260,578,672,841,841,22.6,62
+123,"Mathematics and Computing (4 Years, Bachelor of Technology)",6264,7540,11246,11402,6054,3218,5254,5305,1625,1949,2742,2742,730,956,760,760,22,95
+123,"Electrical Engineering (4 Years, Bachelor of Technology)",7708,10395,13563,15325,6073,4094,6050,6543,1495,2410,2889,3055,982,999,1449,1449,20.3,77
+123,"Engineering Physics (4 Years, Bachelor of Technology)",11757,13663,19941,19941,6166,6014,6217,6710,2812,3139,4584,4584,1622,1622,1616,1616,30.7,65
+123,"Mechanical Engineering (4 Years, Bachelor of Technology)",10462,14226,21726,22935,6155,5374,7475,8556,2802,2989,3274,3274,1324,1329,1681,1681,29.3,70
+123,"Chemical and Biochemical Engineering (4 Years, Bachelor of Technology)",13282,16190,19171,19171,6108,5639,7362,8443,3208,3239,4061,4061,1427,1427,1568,1568,27.3,71
+123,"Civil and Infrastructure Engineering (4 Years, Bachelor of Technology)",16871,17095,22373,22373,6263,5904,9082,9082,3228,3235,4493,4493,1556,1556,1859,1859,22.3,64
+123,"Interdisciplinary Sciences (5 Years, Bachelor of Science and Master of Science (Dual Degree))",16348,18331,19989,25615,6256,6842,9049,9049,3166,3758,5008,5132,1838,1878,942,942,24.6,69
