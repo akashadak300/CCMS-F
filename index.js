@@ -1,3 +1,8 @@
+// npm install
+// npm start
+// npm install nodemon
+// node index.js
+
 const express = require("express");
 const app = express();
 const dotenv=require("dotenv");
